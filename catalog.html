@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog - gt86partz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <span class="logo-text">gt86<span class="accent">partz</span></span>
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="catalog.html" class="nav-link active">Catalog</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="desktop-actions">
+        <button class="icon-button" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <button class="icon-button cart-button" aria-label="Cart">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+          <span class="cart-badge">0</span>
+        </button>
+        <a href="catalog.html" class="btn-primary">Shop Now</a>
+      </div>
+
+      <div class="mobile-menu-container">
+        <button class="icon-button cart-button mobile-cart" aria-label="Cart">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+          <span class="cart-badge">0</span>
+        </button>
+        <button class="mobile-menu-button" id="mobile-menu-toggle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="menu-icon"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="close-icon hidden"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <nav class="mobile-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="catalog.html" class="nav-link active">Catalog</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      
+      <div class="mobile-actions">
+        <button class="icon-button" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <a href="catalog.html" class="btn-primary w-full">Shop Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Catalog Hero Section -->
+    <section class="catalog-hero">
+      <div class="container">
+        <div class="catalog-hero-content">
+          <h1 class="catalog-title">Product Catalog</h1>
+          <p class="catalog-description">Browse our complete selection of high-quality automotive parts and accessories.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catalog Content -->
+    <section class="section catalog-section">
+      <div class="container">
+        <div class="catalog-container">
+          <!-- Filters -->
+          <div class="catalog-filters">
+            <div class="filter-group">
+              <h3 class="filter-title">Categories</h3>
+              <div class="filter-options">
+                <label class="filter-option">
+                  <input type="checkbox" checked>
+                  <span>All Categories</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox">
+                  <span>Engine Parts</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox">
+                  <span>Braking System</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox">
+                  <span>Suspension</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox">
+                  <span>Lighting</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox">
+                  <span>Interior</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox">
+                  <span>Exterior</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox">
+                  <span>Transmission</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox">
+                  <span>Exhaust</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <h3 class="filter-title">Price Range</h3>
+              <div class="price-slider">
+                <div class="price-range">
+                  <span>$0</span>
+                  <span>$1000</span>
+                </div>
+                <input type="range" min="0" max="1000" value="500">
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <h3 class="filter-title">Vehicle</h3>
+              <div class="filter-select">
+                <select>
+                  <option value="">Select Make</option>
+                  <option value="toyota">Toyota</option>
+                  <option value="honda">Honda</option>
+                  <option value="ford">Ford</option>
+                  <option value="bmw">BMW</option>
+                  <option value="audi">Audi</option>
+                  <option value="subaru">Subaru</option>
+                  <option value="nissan">Nissan</option>
+                  <option value="mazda">Mazda</option>
+                </select>
+              </div>
+              <div class="filter-select">
+                <select>
+                  <option value="">Select Model</option>
+                  <option value="gt86">GT86</option>
+                  <option value="supra">Supra</option>
+                  <option value="civic">Civic</option>
+                  <option value="mustang">Mustang</option>
+                  <option value="m3">M3</option>
+                  <option value="wrx">WRX</option>
+                  <option value="370z">370Z</option>
+                  <option value="miata">Miata</option>
+                </select>
+              </div>
+              <div class="filter-select">
+                <select>
+                  <option value="">Select Year</option>
+                  <option value="2023">2023</option>
+                  <option value="2022">2022</option>
+                  <option value="2021">2021</option>
+                  <option value="2020">2020</option>
+                  <option value="2019">2019</option>
+                  <option value="2018">2018</option>
+                  <option value="2017">2017</option>
+                  <option value="2016">2016</option>
+                  <option value="2015">2015</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <h3 class="filter-title">Brand</h3>
+              <div class="filter-options">
+                <label class="filter-option">
+                  <input type="checkbox">
+                  <span>Brembo</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox">
+                  <span>K&N</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox">
+                  <span>KW</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox">
+                  <span>HKS</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox">
+                  <span>Borla</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox">
+                  <span>Sparco</span>
+                </label>
+              </div>
+            </div>
+
+            <button class="btn-primary w-full">Apply Filters</button>
+            <button class="btn-secondary w-full">Reset</button>
+          </div>
+
+          <!-- Products -->
+          <div class="catalog-products">
+            <div class="catalog-header">
+              <div class="catalog-results">
+                <p>Showing <span>24</span> of <span>67</span> products</p>
+              </div>
+              <div class="catalog-sort">
+                <label for="sort">Sort by:</label>
+                <select id="sort">
+                  <option value="popular">Most Popular</option>
+                  <option value="latest">Latest</option>
+                  <option value="price-low">Price: Low to High</option>
+                  <option value="price-high">Price: High to Low</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="products-grid catalog-grid">
+              <!-- Product 1 -->
+              <div class="product-card" id="brake-kit">
+                <div class="product-image-container">
+                  <img src="assets/product-1.jpg" alt="High-Performance Brake Kit" class="product-image">
+                  <div class="product-tag">New</div>
+                  <div class="product-overlay">
+                    <button class="product-action-button" aria-label="Add to cart">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-content">
+                  <div class="product-info">
+                    <p class="product-category">Braking System</p>
+                    <h3 class="product-title">High-Performance Brake Kit</h3>
+                  </div>
+                  <div class="product-rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    <span>4.8</span>
+                  </div>
+                  <div class="product-footer">
+                    <p class="product-price">$299.99</p>
+                    <a href="#" class="product-details-link">
+                      Details
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 2 -->
+              <div class="product-card" id="led-headlight">
+                <div class="product-image-container">
+                  <img src="assets/product-2.jpg" alt="Advanced LED Headlight Set" class="product-image">
+                  <div class="product-overlay">
+                    <button class="product-action-button" aria-label="Add to cart">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-content">
+                  <div class="product-info">
+                    <p class="product-category">Lighting</p>
+                    <h3 class="product-title">Advanced LED Headlight Set</h3>
+                  </div>
+                  <div class="product-rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    <span>4.9</span>
+                  </div>
+                  <div class="product-footer">
+                    <p class="product-price">$189.99</p>
+                    <a href="#" class="product-details-link">
+                      Details
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Product 3 -->
+              <div class="product-card" id="air-intake">
+                <div class="product-image-container">
+                  <img src="assets/product-3.jpg" alt="Carbon Fiber Air Intake System" class="product-image">
+                  <div class="product-tag">New</div>
+                  <div class="product-overlay">
+                    <button class="product-action-button" aria-label="Add to cart">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-content">
+                  <div class="product-info">
+                    <p class="product-category">Engine</p>
+                    <h3 class="product-title">Carbon Fiber Air Intake System</h3>
+                  </div>
+                  <div class="product-rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    <span>4.7</span>
+                  </div>
+                  <div class="product-footer">
+                    <p class="product-price">$249.99</p>
+                    <a href="#" class="product-details-link">
+                      Details
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Product 4 -->
+              <div class="product-card" id="coilover-kit">
+                <div class="product-image-container">
+                  <img src="assets/product-4.jpg" alt="Adjustable Coilover Suspension Kit" class="product-image">
+                  <div class="product-overlay">
+                    <button class="product-action-button" aria-label="Add to cart">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-content">
+                  <div class="product-info">
+                    <p class="product-category">Suspension</p>
+                    <h3 class="product-title">Adjustable Coilover Suspension Kit</h3>
+                  </div>
+                  <div class="product-rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    <span>4.9</span>
+                  </div>
+                  <div class="product-footer">
+                    <p class="product-price">$799.99</p>
+                    <a href="#" class="product-details-link">
+                      Details
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Product 5 -->
+              <div class="product-card" id="exhaust-system">
+                <div class="product-image-container">
+                  <img src="assets/product-1.jpg" alt="Performance Exhaust System" class="product-image">
+                  <div class="product-overlay">
+                    <button class="product-action-button" aria-label="Add to cart">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-content">
+                  <div class="product-info">
+                    <p class="product-category">Exhaust</p>
+                    <h3 class="product-title">Performance Exhaust System</h3>
+                  </div>
+                  <div class="product-rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    <span>4.6</span>
+                  </div>
+                  <div class="product-footer">
+                    <p class="product-price">$459.99</p>
+                    <a href="#" class="product-details-link">
+                      Details
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Product 6 -->
+              <div class="product-card" id="brake-pads">
+                <div class="product-image-container">
+                  <img src="assets/product-2.jpg" alt="Sport Brake Pads" class="product-image">
+                  <div class="product-tag">Sale</div>
+                  <div class="product-overlay">
+                    <button class="product-action-button" aria-label="Add to cart">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-content">
+                  <div class="product-info">
+                    <p class="product-category">Braking System</p>
+                    <h3 class="product-title">Sport Brake Pads</h3>
+                  </div>
+                  <div class="product-rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    <span>4.5</span>
+                  </div>
+                  <div class="product-footer">
+                    <p class="product-price">$89.99</p>
+                    <a href="#" class="product-details-link">
+                      Details
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Product 7 -->
+              <div class="product-card" id="cold-air-intake">
+                <div class="product-image-container">
+                  <img src="assets/product-3.jpg" alt="Cold Air Intake Kit" class="product-image">
+                  <div class="product-overlay">
+                    <button class="product-action-button" aria-label="Add to cart">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-content">
+                  <div class="product-info">
+                    <p class="product-category">Engine</p>
+                    <h3 class="product-title">Cold Air Intake Kit</h3>
+                  </div>
+                  <div class="product-rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    <span>4.7</span>
+                  </div>
+                  <div class="product-footer">
+                    <p class="product-price">$129.99</p>
+                    <a href="#" class="product-details-link">
+                      Details
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Product 8 -->
+              <div class="product-card" id="fog-lights">
+                <div class="product-image-container">
+                  <img src="assets/product-4.jpg" alt="LED Fog Light Kit" class="product-image">
+                  <div class="product-overlay">
+                    <button class="product-action-button" aria-label="Add to cart">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-content">
+                  <div class="product-info">
+                    <p class="product-category">Lighting</p>
+                    <h3 class="product-title">LED Fog Light Kit</h3>
+                  </div>
+                  <div class="product-rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    <span>4.8</span>
+                  </div>
+                  <div class="product-footer">
+                    <p class="product-price">$149.99</p>
+                    <a href="#" class="product-details-link">
+                      Details
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+              <button class="pagination-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                Previous
+              </button>
+              <div class="pagination-numbers">
+                <button class="pagination-number active">1</button>
+                <button class="pagination-number">2</button>
+                <button class="pagination-number">3</button>
+                <span class="pagination-dots">...</span>
+                <button class="pagination-number">8</button>
+              </div>
+              <button class="pagination-button">
+                Next
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <span class="logo-text">gt86<span class="accent">partz</span></span>
+          </a>
+          <p class="footer-description">
+            Your trusted source for high-quality automotive parts and accessories since 1998.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+            <a href="#" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-menu">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="catalog.html" class="footer-link">Shop</a></li>
+            <li><a href="catalog.html" class="footer-link">Catalog</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3 class="footer-title">Categories</h3>
+          <ul class="footer-menu">
+            <li><a href="catalog.html" class="footer-link">Engine Parts</a></li>
+            <li><a href="catalog.html" class="footer-link">Brake System</a></li>
+            <li><a href="catalog.html" class="footer-link">Suspension</a></li>
+            <li><a href="catalog.html" class="footer-link">Lighting</a></li>
+            <li><a href="catalog.html" class="footer-link">Interior</a></li>
+            <li><a href="catalog.html" class="footer-link">Exterior</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h3 class="footer-title">Newsletter</h3>
+          <p class="footer-description">
+            Subscribe to receive updates, access to exclusive deals, and more.
+          </p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" class="newsletter-input">
+            <button type="submit" class="newsletter-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; <span id="current-year">2023</span> gt86partz. All rights reserved.
+        </p>
+        <div class="footer-bottom-links">
+          <a href="#" class="policy-link">Privacy Policy</a>
+          <a href="#" class="policy-link">Terms of Service</a>
+          <a href="#" class="policy-link">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
