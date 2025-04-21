@@ -119,7 +119,7 @@ body {
 
 .logo-text {
   font-weight: 700;
-  color: var(--light-gray);
+  color: var(--primary-dark);
 }
 
 /* Desktop Navigation */
