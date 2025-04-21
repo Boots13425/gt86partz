@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: 1,
       name: "Michael S.",
       rating: 5,
-      date: "2023-10-15",
+      date: "2025-1-15",
       product: "High-Performance Brake Kit",
       comment: "These brakes are amazing! Stopping power is incredible and installation was straightforward.",
     },
@@ -209,7 +209,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: 2,
       name: "Sarah L.",
       rating: 4,
-      date: "2023-09-22",
+      date: "2024-09-22",
       product: "Advanced LED Headlight Set",
       comment:
         "Great visibility at night. The only reason I'm not giving 5 stars is because installation was a bit tricky.",
@@ -647,7 +647,7 @@ document.addEventListener("DOMContentLoaded", () => {
         window.open(mailtoLink)
 
         // Show confirmation
-        alert("Thank you for your order! An email has been sent with your order details.")
+        alert("Thank you! We will get back to you within 24hours.")
 
         // Close cart modal
         closeCart()
