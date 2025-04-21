@@ -643,7 +643,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Send email (using mailto for demonstration)
         const emailSubject = "New Order from gt86partz"
-        const mailtoLink = `mailto:lekebryan64@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`
+        const mailtoLink = `mailto:orders@gt86partz.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`
         window.open(mailtoLink)
 
         // Show confirmation
