@@ -113,14 +113,39 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 
-  // Sample product data for search and cart
+  // Enhanced product data with additional details for product detail page
   const products = [
     {
       id: "brake-kit",
       name: "High-Performance Brake Kit",
       category: "Braking System",
       price: 299.99,
-      image: "assets/product-1.jpg",
+      image: "images/product-1.jpg",
+      images: ["images/product-1.jpg", "images/product-1-2.jpg", "images/product-1-3.jpg", "images/product-1-4.jpg"],
+      rating: 4.8,
+      reviewCount: 24,
+      sku: "BRK-HP-001",
+      description:
+        "Upgrade your vehicle's stopping power with our high-performance brake kit. Designed for superior heat dissipation and reduced brake fade.",
+      longDescription:
+        "Our High-Performance Brake Kit is engineered to provide exceptional stopping power and consistent performance under demanding conditions. The kit includes premium rotors with a cross-drilled and slotted design for improved heat dissipation, reducing the risk of brake fade during intense driving sessions. The high-performance brake pads offer excellent initial bite and maintain their effectiveness across a wide temperature range. This complete kit is a direct replacement for your stock braking system, offering a significant upgrade in both performance and safety without requiring any modifications to your vehicle.",
+      features: [
+        "Cross-drilled and slotted rotors for improved heat dissipation",
+        "High-performance brake pads with excellent initial bite",
+        "Stainless steel brake lines for improved pedal feel",
+        "Direct replacement for stock components",
+        "Includes all necessary hardware for installation",
+      ],
+      specifications: [
+        { name: "Rotor Material", value: "High-carbon steel" },
+        { name: "Rotor Finish", value: "Zinc-coated" },
+        { name: "Pad Material", value: "Semi-metallic compound" },
+        { name: "Operating Temperature", value: "Up to 1,400°F (760°C)" },
+        { name: "Weight", value: "32 lbs (14.5 kg)" },
+        { name: "Warranty", value: "2 years" },
+      ],
+      tags: ["Brakes", "Performance", "Safety"],
+      relatedProducts: ["sport-brake-pads", "brake-fluid", "wheel-spacers"],
     },
     {
       id: "uel-header",
@@ -128,6 +153,32 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "Header",
       price: 499.99,
       image: "images/prod-2.jpg",
+      images: ["images/prod-2.jpg", "images/prod2-2.jpg"],
+      rating: 4.9,
+      reviewCount: 18,
+      sku: "HDR-UEL-002",
+      description:
+        "Enhance your Subaru BRZ or Toyota 86 with our Unequal Length (UEL) header for improved torque and that distinctive Subaru rumble.",
+      longDescription:
+        "Our Unequal Length (UEL) Header is specifically designed for the Subaru BRZ, Toyota 86, and Scion FRS platforms, including the new generation models. This header is crafted from high-quality 304 stainless steel with precision TIG welds for durability and performance. The unequal length design creates the iconic Subaru rumble while improving exhaust flow and increasing torque in the mid-range. Each header is dyno-tested to ensure consistent performance gains across the powerband. Installation is straightforward with our direct-fit design, and all necessary gaskets and hardware are included for a complete installation.",
+      features: [
+        "Made from 304 stainless steel for durability",
+        "Precision TIG welded for strength and quality",
+        "Unequal length design for the distinctive Subaru rumble",
+        "Improves mid-range torque and throttle response",
+        "Direct fit with no modifications required",
+        "Includes all necessary gaskets and hardware",
+      ],
+      specifications: [
+        { name: "Material", value: "304 Stainless Steel" },
+        { name: "Primary Tube Diameter", value: "1.5 inches (38mm)" },
+        { name: "Collector Size", value: "2.5 inches (63.5mm)" },
+        { name: "Weight", value: "18 lbs (8.2 kg)" },
+        { name: "Finish", value: "Polished" },
+        { name: "Warranty", value: "Lifetime against manufacturing defects" },
+      ],
+      tags: ["Exhaust", "Performance", "Engine"],
+      relatedProducts: ["exhaust-system", "cold-air-intake", "engine"],
     },
     {
       id: "bumper",
@@ -135,63 +186,407 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "bumper",
       price: 499.99,
       image: "images/prod-4.jpg",
+      images: ["images/prod-4.jpg", "images/prod-4-2.jpg", "images/prod-4-3.jpg", "images/prod-4-4.jpg"],
+      rating: 4.7,
+      reviewCount: 15,
+      sku: "BMP-BRZ-003",
+      description:
+        "OEM-quality complete front bumper for Subaru BRZ. Direct replacement with perfect fitment and finish.",
+      longDescription:
+        "This complete front bumper assembly for the Subaru BRZ is manufactured to OEM specifications, ensuring perfect fitment and finish. Made from high-quality automotive-grade materials, this bumper offers the same durability as the factory part while providing a fresh, clean look for your vehicle. The bumper comes pre-drilled for easy installation and includes all mounting brackets and hardware. Whether you're replacing a damaged bumper or upgrading your vehicle's appearance, this complete assembly is the perfect solution for maintaining your BRZ's factory look with OEM-quality components.",
+      features: [
+        "OEM-quality replacement front bumper",
+        "Perfect fitment with factory specifications",
+        "Made from durable automotive-grade materials",
+        "Pre-drilled for easy installation",
+        "Includes all mounting brackets and hardware",
+        "Ready for paint to match your vehicle",
+      ],
+      specifications: [
+        { name: "Material", value: "Automotive-grade plastic" },
+        { name: "Fitment", value: "2013-2020 Subaru BRZ" },
+        { name: "Color", value: "Unpainted (ready for paint)" },
+        { name: "Weight", value: "15 lbs (6.8 kg)" },
+        { name: "Installation", value: "Direct bolt-on replacement" },
+        { name: "Warranty", value: "1 year against manufacturing defects" },
+      ],
+      tags: ["Exterior", "Body Parts", "OEM"],
+      relatedProducts: ["quater-panel", "fog-lights", "led-headlight"],
     },
     {
-      id: "coilover-kit",
-      name: "HKS hypermax S coilovers for BRZ/86/Gr86",
-      category: "Suspension",
-      price: 800,
-      image: "images/prod-1.jpg",
+      id: "wheels",
+      name: "Set of Konig Hypergrams. 17x9 +40 (5x100) Gunmetal Grey",
+      category: "Wheels",
+      price: 1500,
+      image: "images/wheel.jpg",
+      images: ["images/wheel.jpg", "images/wheel1.jpg"],
+      rating: 4.9,
+      reviewCount: 60,
+      sku: "WHE-SKH-004",
+      description:
+        "Engineered with flow-formed technology for exceptional strength and reduced weight, these wheels offer an aggressive stance and improved handling for compatible 5x100 vehicles.",
+      longDescription:
+        "Transform your vehicle's dynamics and aesthetics with the Konig Hypergram 17x9 +40 (5x100) wheel in a sleek Gunmetal Grey finish. Utilizing Konig's advanced Flow-Formed Technology, the Hypergram is manufactured by applying extreme pressure to the wheel's inner barrel while spinning, stretching, and shaping the aluminum. This process aligns the grain structure of the aluminum, resulting in a lighter and stronger wheel than traditional cast methods, without the expense of a fully forged wheel. The aggressive 17x9 dimensions combined with a +40 offset push the wheels out for a more muscular stance and improved cornering stability, making it an ideal choice for track enthusiasts and daily drivers alike seeking a significant performance upgrade. The classic 5x100 bolt pattern ensures compatibility with a wide range of popular performance vehicles, while the durable Gunmetal Grey finish provides a sophisticated, motorsport-inspired look that complements any vehicle color. Experience sharper turn-in, reduced unsprung mass, and a head-turning appearance",
+      features: [
+        "Flow-Formed Technology",
+        "Lightweight Design",
+        "Aggressive Stance",
+        "Gunmetal Grey Finish",
+        "Multi-Spoke Design",
+        "Direct Fit (5x100 applications)",
+      ],
+      specifications: [
+        { name: "Brand", value: "DST" },
+        { name: "Model", value: "Konig Hypergram" },
+        { name: "Diameter", value: "17inches" },
+        { name: "Width", value: "9inches" },
+        { name: "Offset", value: "+40 mm" },
+        { name: "Bolt Pattern (PCD)", value: "5 x 100" },
+        { name: "Construction", value: "Flow-formed" },
+      ],
+      tags: ["Stability", "Performance", "Handling"],
+      relatedProducts: ["lowering-springs", "strut-brace", "sway-bar"],
     },
     {
       id: "exhaust-system",
-      name: "Performance Exhaust System",
-      category: "Engine",
-      price: 459.99,
-      image: "assets/product-1.jpg",
+      name: "GR86/BRZ OEM Mid-pipe",
+      category: "Exhaust",
+      price: 550,
+      image: "images/exhaust.jpg",
+      images: ["images/exhaust.jpg", "images/exhaust-1.jpg", "images/exhaust-2.jpg"],
+      rating: 4.6,
+      reviewCount: 19,
+      sku: "EXH-PRF-005",
+      description:
+        "Double Wall Burnt Tip Remark Axl.. with improved flow and aggressive sound. Stainless steel construction for durability.",
+      longDescription:
+        "Our Performance Exhaust System is designed to maximize exhaust flow, reduce backpressure, and deliver an aggressive sound that enhances your driving experience. Constructed from high-quality T304 stainless steel with mandrel-bent tubing, this system ensures optimal flow characteristics and long-lasting durability. The system includes a high-flow muffler with a polished tip for an attractive appearance. Installation is straightforward with our direct-fit design that uses factory mounting locations. This exhaust system not only improves performance but also reduces weight compared to the stock system, contributing to better overall vehicle dynamics.",
+      features: [
+        "T304 stainless steel construction",
+        "Mandrel-bent tubing for optimal flow",
+        "High-flow muffler design",
+        "Burnt exhaust tip",
+        "Reduced weight compared to stock",
+        "Aggressive sound profile",
+      ],
+      specifications: [
+        { name: "Material", value: "T304 Stainless Steel" },
+        { name: "Pipe Diameter", value: "2.5 inches (63.5mm)" },
+        { name: "Muffler Type", value: "Straight-through design" },
+        { name: "Tip Size", value: "4 inches (101.6mm)" },
+        { name: "Weight Reduction", value: "Approximately 10 lbs (4.5 kg)" },
+        { name: "Sound Level", value: "Medium-aggressive" },
+        { name: "Warranty", value: "Lifetime against manufacturing defects" },
+      ],
+      tags: ["Exhaust", "Performance", "Engine"],
+      relatedProducts: ["uel-header", "cold-air-intake", "engine"],
     },
     {
       id: "brake-pads",
-      name: "Sport Brake Pads",
+      name: "BRZ/86/FRS OEM Brembos complete set.",
       category: "Braking System",
       price: 89.99,
-      image: "assets/product-2.jpg",
+      image: "images/brake.jpg",
+      images: ["images/brake.jpg", "images/brake1.jpg"],
+      rating: 4.5,
+      reviewCount: 31,
+      sku: "BRK-PAD-006",
+      description:
+        "High-performance sport brake pads with excellent stopping power and low dust. Perfect for spirited street driving.",
+      longDescription:
+        "Our Sport Brake Pads are engineered for enthusiasts who demand better stopping power without the drawbacks of full race compounds. These pads feature a semi-metallic compound that offers excellent initial bite and consistent performance across a wide temperature range. The unique formulation produces minimal brake dust, keeping your wheels cleaner longer. These pads are designed to be gentle on rotors while still providing significantly improved stopping power over stock pads. They're ideal for spirited street driving and occasional track days, offering a perfect balance between performance and everyday usability.",
+      features: [
+        "Semi-metallic compound for improved stopping power",
+        "Low dust formulation keeps wheels cleaner",
+        "Excellent initial bite and pedal feel",
+        "Minimal rotor wear compared to race compounds",
+        "Reduced fade under repeated heavy braking",
+        "Chamfered and slotted design for noise reduction",
+      ],
+      specifications: [
+        { name: "Material", value: "Semi-metallic compound" },
+        { name: "Operating Temperature", value: "100-800°F (38-427°C)" },
+        { name: "Break-in Period", value: "200-300 miles" },
+        { name: "Dust Level", value: "Low" },
+        { name: "Noise Level", value: "Low-Medium" },
+        { name: "Warranty", value: "1 year" },
+      ],
+      tags: ["Brakes", "Performance", "Safety"],
+      relatedProducts: ["brake-kit", "brake-fluid", "brake-lines"],
     },
+
+        {
+      id: "engine",
+      name: "Subaru BRZ FA20 2.0L Engine",
+      category: "Engine",
+      price: 3500,
+      image: "images/subaru.jpg",
+      images: ["images/subaru.jpg", "images/subaru1.jpg", "images/prod-6.jpg",],
+      rating: 4.7,
+      reviewCount: 27,
+      sku: "ENG-CAI-017",
+      description:
+        "SUBARU BRZ/86 2014-2016 ENGINE PETROL, 2.0, FA20, CAST ALLOY/RED MANIFORD, Z1 (70km).",
+      longDescription:
+        "Elevate the heart of your 2014-2016 Subaru BRZ or Toyota 86 with our meticulously prepared FA20 engine, featuring the striking Cast Alloy/Red Manifold. This isn't just a replacement; it's a performance-focused solution designed to rejuvenate or significantly upgrade your driving experience. Bearing the Z1 designation, this particular unit boasts an incredibly low 70 kilometers of documented use, representing a near-new state with minimal wear, making it an exceptional find for enthusiasts seeking peak performance and longevity.",
+      features: [
+        "The custom Red Cast Alloy manifold provides a significant visual upgrade",
+        "Heat shield to isolate from engine bay temperatures",
+        "Direct bolt-on installation",
+        "Engineered for a seamless installation,",
+      ],
+      specifications: [
+        { name: "engine type", value: "FA20 Boxer 4-Cylinder" },
+        { name: "Displacement", value: "2.0 littres" },
+        { name: "Mileage", value: "Only 70km" },
+        { name: "Manifold", value: "Cast Alloy Intake Manifold finished in a vibrant Red" },
+        { name: "Warranty", value: "Million-mile limited warranty" },
+      ],
+      tags: ["Engine", "Performance", ],
+      relatedProducts: ["uel-header", "exhaust-system", "engine"],
+    },
+
     {
-      id: "cold-air-intake",
+      id: "engine",
       name: "Cold Air Intake Kit",
       category: "Engine",
       price: 129.99,
-      image: "assets/product-3.jpg",
+      image: "images/product-3.jpg",
+      images: ["images/product-3.jpg", "images/product-3-2.jpg", "images/product-3-3.jpg", "images/product-3-4.jpg"],
+      rating: 4.7,
+      reviewCount: 27,
+      sku: "ENG-CAI-007",
+      description:
+        "Performance cold air intake system that increases airflow to your engine for improved power and throttle response.",
+      longDescription:
+        "Our Cold Air Intake Kit is designed to increase airflow to your engine by replacing the restrictive factory air box with a high-flow filter and intake tube. This system draws cooler air from outside the engine bay, resulting in denser air charges and improved combustion efficiency. The mandrel-bent aluminum intake tube minimizes air turbulence, while the oversized conical filter provides maximum filtration without restricting airflow. Installation is straightforward with our direct-fit design, and no tuning is required to see immediate performance gains. Users typically report improved throttle response, a more aggressive engine sound, and modest power gains throughout the RPM range.",
+      features: [
+        "High-flow conical air filter",
+        "Mandrel-bent aluminum intake tube",
+        "Heat shield to isolate from engine bay temperatures",
+        "Reusable and washable filter element",
+        "Direct bolt-on installation",
+        "No tuning required",
+      ],
+      specifications: [
+        { name: "Filter Material", value: "Cotton gauze with oil treatment" },
+        { name: "Intake Tube Material", value: "Aluminum" },
+        { name: "Intake Tube Diameter", value: "3 inches (76mm)" },
+        { name: "Filter Type", value: "Conical, reusable" },
+        { name: "Estimated Power Gain", value: "5-10 HP" },
+        { name: "Maintenance", value: "Filter cleaning every 10,000-15,000 miles" },
+        { name: "Warranty", value: "Million-mile limited warranty" },
+      ],
+      tags: ["Engine", "Performance", "Air Intake"],
+      relatedProducts: ["uel-header", "exhaust-system", "engine"],
     },
-    { id: "fog-lights", name: "LED Fog Light Kit", category: "Lighting", price: 149.99, image: "assets/product-4.jpg" },
+    
+    {
+      id: "fog-lights",
+      name: "Vland Smocked Clear Sequence Taillight FRS BRZ 86",
+      category: "Lighting",
+      price: 350,
+      image: "images/fog-light3.jpg",
+      images: ["images/fog-light2.jpg", "images/fog-light3.jpg", "images/fog-light1.jpg"],
+      rating: 4.8,
+      reviewCount: 23,
+      sku: "LGT-FOG-008",
+      description:
+        "Complete Taillight light kit with improved visibility and modern appearance. Direct replacement for factory taillights. Brand new in box, only opened for photos",
+      longDescription:
+        "Our Taillight Light Kit provides superior illumination in adverse weather conditions while giving your vehicle a modern, premium appearance. These lights use advanced LED technology to produce a bright, focused beam with a color temperature that closely matches daylight for improved visibility. The housing is constructed from durable, weather-resistant materials and features an adjustable mounting bracket for precise beam alignment. This kit is a direct replacement for factory lights, using existing mounting points and wiring harnesses for straightforward installation. Each kit includes two complete light assemblies, wiring adapters, and detailed installation instructions.",
+      features: [
+        "Advanced LED technology for improved visibility",
+        "Boomerang daytime running light",
+        "Weather-resistant housing and sealed construction",
+        "Adjustable mounting for precise beam alignment",
+        "Direct replacement using factory mounting points",
+        "Low power consumption compared to halogen lights",
+      ],
+      specifications: [
+        { name: "Light Source", value: "High-intensity LEDs" },
+        { name: "Color Temperature", value: "6000K (Cool White)" },
+        { name: "Power Consumption", value: "25W per light" },
+        { name: "Lumens", value: "1800 lumens per light" },
+        { name: "Housing Material", value: "Impact-resistant polycarbonate" },
+        { name: "Lens", value: "Projector-style with anti-glare coating" },
+        { name: "Lifespan", value: "50,000+ hours" },
+        { name: "Warranty", value: "3 years" },
+      ],
+      tags: ["Lighting", "Visibility", "Exterior"],
+      relatedProducts: ["led-headlight", "bumper", "exterior-accessories"],
+    },
+
+        {
+      id: "led-headlight",
+      name: "Original facelift Headlamp",
+      category: "Lighting",
+      price: 300,
+      image: "images/head2.jpg",
+      images: ["images/head2.jpg", "images/head1.jpg", "images/head-3.jpg"],
+      rating: 4.7,
+      reviewCount: 20,
+      sku: "LGT-FOG-008",
+      description:
+        "Complete Facelift headlamp with improved visibility and modern appearance.",
+      longDescription:
+        "The housing is constructed from durable, weather-resistant materials and features an adjustable mounting bracket for precise beam alignment. This kit is a direct replacement for factory lights, using existing mounting points and wiring harnesses for straightforward installation. Each kit includes two complete light assemblies, wiring adapters, and detailed installation instructions.",
+      features: [
+        "Advanced LED technology for improved visibility",
+        "Boomerang daytime running light",
+        "Weather-resistant housing and sealed construction",
+        "Adjustable mounting for precise beam alignment",
+        "Direct replacement using factory mounting points",
+        "Low power consumption compared to halogen lights",
+      ],
+      specifications: [
+        { name: "Light Source", value: "High-intensity LEDs" },
+        { name: "Color Temperature", value: "6000K (Cool White)" },
+        { name: "Power Consumption", value: "25W per light" },
+        { name: "Lumens", value: "1800 lumens per light" },
+        { name: "Housing Material", value: "Impact-resistant polycarbonate" },
+        { name: "Lens", value: "Projector-style with anti-glare coating" },
+        { name: "Lifespan", value: "50,000+ hours" },
+        { name: "Warranty", value: "3 years" },
+      ],
+      tags: ["Lighting", "Visibility", "Exterior"],
+      relatedProducts: ["fog-lights", "bumper", "exterior-accessories"],
+    },
+    
     {
       id: "steering-wheel",
       name: "Racing Steering Wheel",
       category: "Interior",
       price: 199.99,
-      image: "assets/product-1.jpg",
+      image: "images/product-1.jpg",
+      images: ["images/product-1.jpg", "images/product-1-2.jpg", "images/product-1-3.jpg", "images/product-1-4.jpg"],
+      rating: 4.7,
+      reviewCount: 16,
+      sku: "INT-SW-009",
+      description:
+        "Premium racing steering wheel with ergonomic design and premium materials for improved grip and control.",
+      longDescription:
+        "Our Racing Steering Wheel is designed for driving enthusiasts who demand better feedback and control. Featuring a smaller diameter than stock wheels, this racing-inspired design allows for quicker steering inputs and improved response. The wheel is wrapped in premium materials with ergonomic thumb grips and a thicker rim for enhanced comfort during spirited driving. The flat bottom design provides additional leg clearance and a sportier look. This steering wheel is a direct replacement for your factory wheel and retains compatibility with all steering wheel controls and airbag functionality, ensuring both performance and safety.",
+      features: [
+        "Smaller diameter for quicker steering response",
+        "Premium materials with ergonomic thumb grips",
+        "Thicker rim for improved grip and comfort",
+        "Flat bottom design for additional leg clearance",
+        "Compatible with factory steering wheel controls",
+        "Retains airbag functionality for safety",
+      ],
+      specifications: [
+        { name: "Diameter", value: "350mm (13.8 inches)" },
+        { name: "Grip Material", value: "Perforated leather with Alcantara sections" },
+        { name: "Spoke Material", value: "Aluminum" },
+        { name: "Weight", value: "1.2 kg (2.6 lbs)" },
+        { name: "Airbag Compatible", value: "Yes" },
+        { name: "Controls Compatible", value: "Yes" },
+        { name: "Warranty", value: "2 years" },
+      ],
+      tags: ["Interior", "Performance", "Steering"],
+      relatedProducts: ["shift-knob", "pedal-covers", "interior-trim"],
     },
     {
       id: "clutch-kit",
       name: "Performance Clutch Kit",
       category: "Transmission",
       price: 349.99,
-      image: "assets/product-2.jpg",
+      image: "images/product-2.jpg",
+      images: ["images/product-2.jpg", "images/product-2-2.jpg", "images/product-2-3.jpg", "images/product-2-4.jpg"],
+      rating: 4.6,
+      reviewCount: 14,
+      sku: "TRN-CLT-010",
+      description:
+        "High-performance clutch kit with increased torque capacity while maintaining comfortable pedal feel for daily driving.",
+      longDescription:
+        "Our Performance Clutch Kit is engineered to handle increased torque loads while maintaining a street-friendly pedal feel. The kit features a pressure plate with increased clamping force, a performance disc with a higher coefficient of friction, and a precision-machined flywheel. This combination provides improved power transfer and durability without the harsh engagement often associated with racing clutches. The organic/kevlar friction material offers excellent grip while still allowing for smooth engagement, making this clutch suitable for both spirited driving and daily commuting. Each kit includes all necessary components for a complete clutch replacement, including an alignment tool and detailed installation instructions.",
+      features: [
+        "Increased torque capacity over stock clutch",
+        "Organic/kevlar friction material for smooth engagement",
+        "Pressure plate with optimized clamping force",
+        "Precision-machined flywheel for reduced vibration",
+        "Complete kit with all necessary components",
+        "Suitable for both performance driving and daily use",
+      ],
+      specifications: [
+        { name: "Torque Capacity", value: "Up to 400 ft-lbs" },
+        { name: "Pressure Plate", value: "High-carbon steel with increased spring rate" },
+        { name: "Clutch Disc", value: "Organic/kevlar composite friction material" },
+        { name: "Flywheel", value: "Chromoly steel, lightweight design" },
+        { name: "Pedal Effort Increase", value: "Approximately 15% over stock" },
+        { name: "Break-in Period", value: "500 miles recommended" },
+        { name: "Warranty", value: "1 year" },
+      ],
+      tags: ["Transmission", "Performance", "Drivetrain"],
+      relatedProducts: ["short-shifter", "transmission-mount", "driveshaft"],
     },
     {
       id: "lowering-springs",
       name: "Lowering Springs",
       category: "Suspension",
       price: 219.99,
-      image: "assets/product-3.jpg",
+      image: "images/product-3.jpg",
+      images: ["images/product-3.jpg", "images/product-3-2.jpg", "images/product-3-3.jpg", "images/product-3-4.jpg"],
+      rating: 4.5,
+      reviewCount: 29,
+      sku: "SUS-SPR-011",
+      description:
+        "Performance lowering springs that reduce ride height for improved handling and appearance while maintaining ride comfort.",
+      longDescription:
+        "Our Performance Lowering Springs are designed to lower your vehicle's center of gravity for improved handling characteristics and a more aggressive stance. These springs are manufactured from high-tensile chromium silicon wire and undergo a shot-peening process to reduce stress points and extend service life. The progressive spring rate design provides excellent handling during aggressive driving while maintaining reasonable comfort for daily use. These springs lower your vehicle approximately 1.5 inches from stock height, eliminating excessive wheel gap without creating clearance issues or requiring additional modifications. Each set is powder-coated for corrosion resistance and includes dust boots to protect the springs during operation.",
+      features: [
+        "Lowers vehicle approximately 1.5 inches",
+        "Progressive spring rate for balanced performance",
+        "High-tensile chromium silicon wire construction",
+        "Shot-peened for extended service life",
+        "Powder-coated finish for corrosion resistance",
+        "Direct replacement for factory springs",
+      ],
+      specifications: [
+        { name: "Material", value: "Chromium silicon wire" },
+        { name: "Spring Rate (Front)", value: "Progressive, 350-450 lbs/in" },
+        { name: "Spring Rate (Rear)", value: "Progressive, 300-400 lbs/in" },
+        { name: "Lowering Amount", value: "Approximately 1.5 inches (38mm)" },
+        { name: "Finish", value: "Powder-coated" },
+        { name: "Warranty", value: "Limited lifetime warranty" },
+      ],
+      tags: ["Suspension", "Handling", "Lowering"],
+      relatedProducts: ["coilover-kit", "strut-brace", "sway-bar"],
     },
     {
       id: "strut-brace",
       name: "Strut Tower Brace",
       category: "Suspension",
       price: 129.99,
-      image: "assets/product-4.jpg",
+      image: "images/product-4.jpg",
+      images: ["images/product-4.jpg", "images/product-4-2.jpg", "images/product-4-3.jpg", "images/product-4-4.jpg"],
+      rating: 4.8,
+      reviewCount: 21,
+      sku: "SUS-STB-012",
+      description:
+        "Front strut tower brace that reduces chassis flex for improved handling precision and steering response.",
+      longDescription:
+        "Our Strut Tower Brace is designed to reduce chassis flex by connecting the strut towers, creating a more rigid front end structure. This increased rigidity translates to improved handling precision and more direct steering response, especially during aggressive cornering. The brace is constructed from lightweight yet strong aluminum tubing with CNC-machined mounting brackets for precise fitment. The adjustable design allows for fine-tuning of the preload, and the brace can be installed without removing any factory components. This modification is particularly effective when combined with other suspension upgrades, creating a more cohesive and responsive chassis. Each brace is finished with a durable powder coating and includes all necessary hardware for installation.",
+      features: [
+        "Reduces chassis flex during cornering",
+        "Improves handling precision and steering response",
+        "Lightweight aluminum construction",
+        "CNC-machined mounting brackets for precise fitment",
+        "Adjustable design for fine-tuning",
+        "No modification required for installation",
+      ],
+      specifications: [
+        { name: "Material", value: "6061-T6 aluminum" },
+        { name: "Tube Diameter", value: "1.5 inches (38mm)" },
+        { name: "Weight", value: "3.2 lbs (1.45 kg)" },
+        { name: "Finish", value: "Powder-coated" },
+        { name: "Adjustable", value: "Yes" },
+        { name: "Installation Time", value: "Approximately 30 minutes" },
+        { name: "Warranty", value: "Lifetime" },
+      ],
+      tags: ["Suspension", "Handling", "Chassis Rigidity"],
+      relatedProducts: ["coilover-kit", "lowering-springs", "sway-bar"],
     },
     {
       id: "quater-panel",
@@ -199,6 +594,97 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "quater-panel",
       price: 499.99,
       image: "images/prod-3.jpg",
+      images: ["images/prod-3.jpg", "images/prod3-3.jpg"],
+      rating: 4.9,
+      reviewCount: 11,
+      sku: "BDY-QP-013",
+      description:
+        "Genuine OEM right hand rear quarter panel for Toyota 86/Subaru BRZ. Direct replacement with factory fit and finish.",
+      longDescription:
+        "This Genuine OEM Right Hand Rear Quarter Panel for the Toyota 86/Subaru BRZ is manufactured to the exact specifications of the factory part, ensuring perfect fitment and finish. Made from high-quality steel with the correct gauge and structural reinforcements, this panel maintains the vehicle's structural integrity and safety characteristics. The panel comes with the factory corrosion protection treatment and is ready for prep and paint. This is the ideal solution for repairing collision damage or addressing rust issues, as it provides the same quality and durability as the original panel that came with your vehicle. Each panel undergoes strict quality control to ensure it meets OEM standards.",
+      features: [
+        "Genuine OEM part for perfect fitment",
+        "Manufactured to factory specifications",
+        "Correct steel gauge and structural reinforcements",
+        "Factory corrosion protection treatment",
+        "Maintains vehicle structural integrity",
+        "Ready for prep and paint",
+      ],
+      specifications: [
+        { name: "Material", value: "High-quality automotive steel" },
+        { name: "Fitment", value: "2013-2020 Toyota 86/Subaru BRZ" },
+        { name: "Position", value: "Right hand (passenger side) rear quarter" },
+        { name: "Finish", value: "E-coated (requires paint)" },
+        { name: "OEM Part Number", value: "Toyota: 61611-CA030 / Subaru: 91112CA030" },
+        { name: "Warranty", value: "1 year against manufacturing defects" },
+      ],
+      tags: ["Body Parts", "OEM", "Exterior"],
+      relatedProducts: ["bumper", "exterior-accessories", "body-repair"],
+    },
+
+      {
+      id: "hood",
+      name: "TS Style Carbon Fibre Hood",
+      category: "HOOD",
+      price: 550,
+      image: "images/hood.jpg",
+      images: ["images/hood.jpg", "images/hood1.jpg"],
+      rating: 4.9,
+      reviewCount: 11,
+      sku: "BDY-HOD-013",
+      description:
+        "Elevate your vehicle's performance and aesthetics with the TS Style Carbon Fibre Hood. Crafted from lightweight, high-grade carbon fiber, this hood significantly reduces front-end weight while delivering an aggressive, race-inspired look and improved heat dissipation",
+      longDescription:
+        "Unleash the ultimate blend of form and function for your performance vehicle with the TS Style Carbon Fibre Hood. Engineered to perfection, this hood is meticulously constructed from premium, aerospace-grade carbon fiber, utilizing an advanced manufacturing process that ensures exceptional strength, rigidity, and an incredibly low weight. By significantly reducing mass over the front axle, the TS Style hood directly contributes to improved handling, sharper turn-in, and enhanced acceleration. Beyond its performance benefits, the aggressive TS Style design incorporates functional vents (if applicable, confirm for actual product) that aid in engine bay cooling, crucial for track use or spirited driving, while also providing a distinctive, motorsport-inspired aesthetic. The glossy, UV-resistant clear coat protects the intricate carbon fiber weave, ensuring long-lasting visual appeal and durability against the elements. Experience a dramatic transformation in both your vehicle's appearance and dynamic capabilities with this precision-engineered carbon fibre upgrade.",
+      features: [
+        "Premium Carbon Fibre Construction",
+        "Significant Weight Reduction",
+        "Aggressive TS Style Design:",
+        "Enhanced Aesthetics",
+        "Direct Fitment for Subaru BRZ/Toyota 86",
+        "Improved Heat Dissipation",
+      ],
+      specifications: [
+        { name: "Material", value: "High-Grade Carbon Fibre Composite" },
+        { name: "Fitment", value: "Subaru BRZ / Toyota 86 / Scion FR-S 2012-2021" },
+        { name: "Venting", value: "Subaru BRZ / Toyota 86 / Scion FR-S 2012-2021" },
+     
+      ],
+      tags: ["Body Parts", "OEM", "Exterior"],
+      relatedProducts: [ "exterior-accessories", "body-repair", "roll-cage"],
+    },
+
+
+          {
+      id: "roll-cage",
+      name: "SW Motorsports Rear GT86 Roll Cage",
+      category: "HOOD",
+      price: 700,
+      image: "images/roll-gate.jpg",
+      images: ["images/roll-gate.jpg", "images/roll-gate1.jpg"],
+      rating: 4.9,
+      reviewCount: 15,
+      sku: "BDY-RRG-013",
+      description:
+        "Enhance safety and chassis rigidity with the SW Motorsports Rear Roll Cage for your Toyota GT86, Subaru BRZ, or Scion FR-S. Designed for track-focused performance, this bolt-in solution provides crucial occupant protection and minimizes chassis flex for improved handling.",
+      longDescription:
+        "Take your Toyota GT86, Subaru BRZ, or Scion FR-S to the next level of safety and performance with the SW Motorsports Rear Roll Cage. Engineered with precision for the specific chassis of the ZN6/ZC6 platform, this roll cage is a vital upgrade for serious track enthusiasts and racers. Constructed from high-grade steel tubing (specify material if known, e.g., seamless cold-drawn mild steel or chromoly), the SW Motorsports cage significantly enhances occupant protection in the event of a rollover or impact, meeting stringent safety standards for various motorsport disciplines. Beyond its primary safety function, the strategically integrated design dramatically improves chassis rigidity, reducing flex during hard cornering and aggressive maneuvers. This translates into more predictable handling, increased responsiveness, and a more connected driving experience. The bolt-in design ensures a straightforward installation process, minimizing the need for complex fabrication, while allowing for removal if required. Finished in a durable, protective coating (e.g., gloss black powder coat), this cage not only provides peace of mind but also adds an undeniable race-bred aesthetic to your interior..",
+      features: [
+        "Enhanced Occupant Safety",
+        "Increased Chassis Rigidity",
+        "High-Grade Steel Construction",
+        "recision Engineered Fitment",
+        "Motorsport Aesthetic",
+        "Improved Handling",
+      ],
+      specifications: [
+        { name: "Product", value: "SW Motorsports Rear Roll Cage" },
+        { name: "Compatibility", value: "Toyota GT86, Subaru BRZ, Scion FR-S (ZN6 / ZC6 Chassis)" },
+        { name: "Material", value: "High-grade Steel" },
+     
+      ],
+      tags: ["Body Parts", "Handling", "Safety"],
+      relatedProducts: [ "exterior-accessories", "body-repair", "hood"],
     },
   ]
 
@@ -266,7 +752,7 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "Amanda C.",
       rating: 4,
       date: "2023-11-08",
-      product: "LED Fog Light Kit",
+      product: "Light Kit",
       comment: "These lights are super bright and look great. Installation was a bit challenging.",
     },
   ]
@@ -721,6 +1207,347 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  // Product Detail Page Functionality
+  if (window.location.pathname.includes("product-detail.html")) {
+    const urlParams = new URLSearchParams(window.location.search)
+    const productId = urlParams.get("id")
+
+    if (productId) {
+      // Find the product in our data
+      const product = products.find((p) => p.id === productId)
+
+      if (product) {
+        // Populate product details
+        populateProductDetails(product)
+      } else {
+        // Redirect to catalog if product not found
+        window.location.href = "catalog.html"
+      }
+    } else {
+      // Redirect to catalog if no product ID
+      window.location.href = "catalog.html"
+    }
+  }
+
+  // Function to populate product details
+  function populateProductDetails(product) {
+    // Set page title
+    document.title = `${product.name} - gt86partz`
+
+    // Main product image
+    const mainImage = document.getElementById("main-product-image")
+    if (mainImage) {
+      mainImage.src = product.image
+      mainImage.alt = product.name
+    }
+
+    // Product thumbnails
+    const thumbnailsContainer = document.getElementById("product-thumbnails")
+    if (thumbnailsContainer && product.images) {
+      let thumbnailsHTML = ""
+      product.images.forEach((image, index) => {
+        thumbnailsHTML += `
+          <div class="thumbnail-item ${index === 0 ? "active" : ""}" data-image="${image}">
+            <img src="${image}" alt="${product.name} - Image ${index + 1}" class="thumbnail-image">
+          </div>
+        `
+      })
+      thumbnailsContainer.innerHTML = thumbnailsHTML
+
+      // Add event listeners to thumbnails
+      const thumbnails = document.querySelectorAll(".thumbnail-item")
+      thumbnails.forEach((thumbnail) => {
+        thumbnail.addEventListener("click", () => {
+          // Update main image
+          mainImage.src = thumbnail.dataset.image
+
+          // Update active state
+          thumbnails.forEach((t) => t.classList.remove("active"))
+          thumbnail.classList.add("active")
+        })
+      })
+    }
+
+    // Breadcrumbs
+    const categoryBreadcrumb = document.getElementById("product-category-breadcrumb")
+    if (categoryBreadcrumb) {
+      categoryBreadcrumb.textContent = product.category
+    }
+
+    // Product title
+    const productTitle = document.getElementById("product-title")
+    if (productTitle) {
+      productTitle.textContent = product.name
+    }
+
+    // Product rating
+    const productRatingValue = document.getElementById("product-rating-value")
+    if (productRatingValue) {
+      productRatingValue.textContent = product.rating
+    }
+
+    // Product reviews count
+    const productReviewsCount = document.getElementById("product-reviews-count")
+    if (productReviewsCount) {
+      productReviewsCount.textContent = product.reviewCount
+    }
+
+    // Product SKU
+    const productSku = document.getElementById("product-sku")
+    if (productSku) {
+      productSku.textContent = product.sku
+    }
+
+    // Product price
+    const productPrice = document.getElementById("product-price")
+    if (productPrice) {
+      productPrice.textContent = `$${product.price.toFixed(2)}`
+    }
+
+    // Product description
+    const productDescription = document.getElementById("product-description")
+    if (productDescription) {
+      productDescription.textContent = product.description
+    }
+
+    // Product features
+    const productFeatures = document.getElementById("product-features")
+    if (productFeatures && product.features) {
+      let featuresHTML = ""
+      product.features.forEach((feature) => {
+        featuresHTML += `<li>${feature}</li>`
+      })
+      productFeatures.innerHTML = featuresHTML
+    }
+
+    // Product long description
+    const productLongDescription = document.getElementById("product-long-description")
+    if (productLongDescription) {
+      productLongDescription.textContent = product.longDescription
+    }
+
+    // Product specifications
+    const productSpecifications = document.getElementById("product-specifications")
+    if (productSpecifications && product.specifications) {
+      let specificationsHTML = ""
+      product.specifications.forEach((spec) => {
+        specificationsHTML += `
+          <tr>
+            <th>${spec.name}</th>
+            <td>${spec.value}</td>
+          </tr>
+        `
+      })
+      productSpecifications.innerHTML = specificationsHTML
+    }
+
+    // Product category
+    const productCategory = document.getElementById("product-category")
+    if (productCategory) {
+      productCategory.textContent = product.category
+    }
+
+    // Product tags
+    const productTags = document.getElementById("product-tags")
+    if (productTags && product.tags) {
+      productTags.textContent = product.tags.join(", ")
+    }
+
+    // Reviews
+    const reviewsList = document.getElementById("reviews-list")
+    if (reviewsList) {
+      // Filter reviews for this product
+      const productReviews = reviews.filter((review) => review.product === product.name)
+
+      if (productReviews.length > 0) {
+        let reviewsHTML = ""
+        productReviews.forEach((review) => {
+          // Get initials for avatar
+          const initials = review.name
+            .split(" ")
+            .map((n) => n[0])
+            .join("")
+
+          // Format date
+          const reviewDate = new Date(review.date).toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          })
+
+          // Generate stars HTML
+          let starsHTML = ""
+          for (let i = 1; i <= 5; i++) {
+            if (i <= review.rating) {
+              starsHTML += `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>`
+            } else {
+              starsHTML += `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>`
+            }
+          }
+
+          reviewsHTML += `
+            <div class="review-item">
+              <div class="review-header">
+                <div class="reviewer-info">
+                  <div class="reviewer-avatar">${initials}</div>
+                  <div class="reviewer-details">
+                    <div class="reviewer-name">${review.name}</div>
+                    <div class="review-date">${reviewDate}</div>
+                  </div>
+                </div>
+                <div class="review-rating">
+                  ${starsHTML}
+                </div>
+              </div>
+              <div class="review-content">
+                ${review.comment}
+              </div>
+            </div>
+          `
+        })
+
+        reviewsList.innerHTML = reviewsHTML
+      } else {
+        reviewsList.innerHTML = `<p>No reviews yet for this product.</p>`
+      }
+    }
+
+    // Average rating
+    const averageRating = document.getElementById("average-rating")
+    if (averageRating) {
+      averageRating.textContent = product.rating
+    }
+
+    // Total reviews count
+    const totalReviewsCount = document.getElementById("total-reviews-count")
+    if (totalReviewsCount) {
+      totalReviewsCount.textContent = product.reviewCount
+    }
+
+    // Related products
+    const relatedProductsContainer = document.getElementById("related-products")
+    if (relatedProductsContainer && product.relatedProducts) {
+      let relatedProductsHTML = ""
+
+      // Get up to 4 related products
+      const relatedProducts = product.relatedProducts
+        .map((id) => products.find((p) => p.id === id))
+        .filter((p) => p) // Filter out any undefined products
+        .slice(0, 4)
+
+      relatedProducts.forEach((relatedProduct) => {
+        relatedProductsHTML += `
+          <div class="product-card" id="${relatedProduct.id}">
+            <div class="product-image-container">
+              <img src="${relatedProduct.image}" alt="${relatedProduct.name}" class="product-image">
+              <div class="product-overlay">
+                <button class="product-action-button" aria-label="Add to cart">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+                </button>
+              </div>
+            </div>
+            <div class="product-content">
+              <div class="product-info">
+                <p class="product-category">${relatedProduct.category}</p>
+                <h3 class="product-title">${relatedProduct.name}</h3>
+              </div>
+              <div class="product-rating">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <span>${relatedProduct.rating}</span>
+              </div>
+              <div class="product-footer">
+                <p class="product-price">$${relatedProduct.price.toFixed(2)}</p>
+                <a href="product-detail.html?id=${relatedProduct.id}" class="product-details-link">
+                  Details
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        `
+      })
+
+      relatedProductsContainer.innerHTML = relatedProductsHTML
+    }
+
+    // Add to cart button
+    const addToCartBtn = document.getElementById("add-to-cart")
+    if (addToCartBtn) {
+      addToCartBtn.addEventListener("click", () => {
+        // Get quantity
+        const quantityValue = document.querySelector(".quantity-value")
+        const quantity = Number.parseInt(quantityValue.textContent, 10)
+
+        // Add to cart multiple times based on quantity
+        for (let i = 0; i < quantity; i++) {
+          addToCart(product.id)
+        }
+      })
+    }
+
+    // Quantity buttons
+    const decreaseQuantityBtn = document.querySelector(".decrease-quantity")
+    const increaseQuantityBtn = document.querySelector(".increase-quantity")
+    const quantityValue = document.querySelector(".quantity-value")
+
+    if (decreaseQuantityBtn && increaseQuantityBtn && quantityValue) {
+      decreaseQuantityBtn.addEventListener("click", () => {
+        let quantity = Number.parseInt(quantityValue.textContent, 10)
+        if (quantity > 1) {
+          quantity--
+          quantityValue.textContent = quantity
+        }
+      })
+
+      increaseQuantityBtn.addEventListener("click", () => {
+        let quantity = Number.parseInt(quantityValue.textContent, 10)
+        quantity++
+        quantityValue.textContent = quantity
+      })
+    }
+
+    // Tab functionality
+    const tabButtons = document.querySelectorAll(".tab-button")
+    const tabPanels = document.querySelectorAll(".tab-panel")
+
+    tabButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        // Remove active class from all buttons and panels
+        tabButtons.forEach((btn) => btn.classList.remove("active"))
+        tabPanels.forEach((panel) => panel.classList.remove("active"))
+
+        // Add active class to clicked button and corresponding panel
+        button.classList.add("active")
+        const tabId = button.dataset.tab
+        document.getElementById(`${tabId}-panel`).classList.add("active")
+      })
+    })
+  }
+
+  // Update product detail links to point to the product detail page
+  function updateProductDetailLinks() {
+    const detailLinks = document.querySelectorAll(".product-details-link")
+
+    detailLinks.forEach((link) => {
+      link.addEventListener("click", (e) => {
+        // Prevent default link behavior
+        e.preventDefault()
+
+        // Get product ID from the closest product card
+        const productCard = link.closest(".product-card")
+        if (productCard) {
+          const productId = productCard.id
+
+          // Redirect to product detail page with product ID
+          window.location.href = `product-detail.html?id=${productId}`
+        }
+      })
+    })
+  }
+
+  // Call the function to update product detail links
+  updateProductDetailLinks()
+
   // Search functionality
   const searchButtons = document.querySelectorAll('.icon-button[aria-label="Search"]')
   const searchOverlay = document.createElement("div")
@@ -808,7 +1635,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let resultsHTML = '<div class="results-grid">'
     filteredProducts.forEach((product) => {
       resultsHTML += `
-        <a href="catalog.html?product=${product.id}" class="result-card">
+        <a href="product-detail.html?id=${product.id}" class="result-card">
           <div class="result-image">
             <img src="${product.image}" alt="${product.name}">
           </div>
@@ -842,4 +1669,3 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 })
-

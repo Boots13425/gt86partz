@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Detail - gt86partz</title>
+  <link rel="icon" href="images/icon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <span class="logo-text">gt86<span class="accent">partz</span></span>
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="catalog.html" class="nav-link active">Catalog</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="desktop-actions">
+        <button class="icon-button" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <button class="icon-button cart-button" aria-label="Cart">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+          <span class="cart-badge">0</span>
+        </button>
+        <a href="catalog.html" class="btn-primary">Shop Now</a>
+      </div>
+
+      <div class="mobile-menu-container">
+        <button class="icon-button cart-button mobile-cart" aria-label="Cart">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+          <span class="cart-badge">0</span>
+        </button>
+        <button class="mobile-menu-button" id="mobile-menu-toggle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="menu-icon"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="close-icon hidden"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <nav class="mobile-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="catalog.html" class="nav-link active">Catalog</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      
+      <div class="mobile-actions">
+        <button class="icon-button" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <a href="catalog.html" class="btn-primary w-full">Shop Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Product Detail Section -->
+    <section class="section product-detail-section">
+      <div class="container">
+        <div class="product-detail-container">
+          <!-- Product Images -->
+          <div class="product-detail-images">
+            <div class="product-main-image">
+              <img id="main-product-image" src="/placeholder.svg" alt="Product Image" class="main-image">
+            </div>
+            <div class="product-thumbnails" id="product-thumbnails">
+              <!-- Thumbnails will be populated by JavaScript -->
+            </div>
+          </div>
+
+          <!-- Product Info -->
+          <div class="product-detail-info">
+            <div class="product-breadcrumbs">
+              <a href="index.html">Home</a> / 
+              <a href="catalog.html">Catalog</a> / 
+              <span id="product-category-breadcrumb">Category</span>
+            </div>
+            
+            <h1 id="product-title" class="product-detail-title">Product Title</h1>
+            
+            <div class="product-detail-meta">
+              <div class="product-detail-rating">
+                <div class="product-rating">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                </div>
+                <span id="product-rating-value">5.0</span>
+                <span class="product-reviews-count">(<span id="product-reviews-count">12</span> reviews)</span>
+              </div>
+              <div class="product-detail-sku">
+                SKU: <span id="product-sku">GT86-123456</span>
+              </div>
+            </div>
+            
+            <div class="product-detail-price">
+              <span id="product-price">$299.99</span>
+            </div>
+            
+            <div class="product-detail-description">
+              <p id="product-description">Product description will be displayed here.</p>
+            </div>
+            
+            <div class="product-detail-features">
+              <h3>Key Features</h3>
+              <ul id="product-features">
+                <!-- Features will be populated by JavaScript -->
+              </ul>
+            </div>
+            
+            <div class="product-detail-actions">
+              <div class="product-quantity">
+                <button class="quantity-btn decrease-quantity">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                </button>
+                <span class="quantity-value">1</span>
+                <button class="quantity-btn increase-quantity">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                </button>
+              </div>
+              
+              <button class="btn-primary add-to-cart-btn" id="add-to-cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+                Add to Cart
+              </button>
+              
+              <button class="btn-secondary wishlist-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                Add to Wishlist
+              </button>
+            </div>
+            
+            <div class="product-detail-meta-info">
+              <div class="meta-item">
+                <span class="meta-label">Category:</span>
+                <span id="product-category">Category</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Tags:</span>
+                <span id="product-tags">Tag1, Tag2, Tag3</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Share:</span>
+                <div class="product-share">
+                  <a href="https://www.facebook.com/share/1AgGndWiQW/?mibextid=wwXIfr" class="share-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                  </a>
+            <a href="https://www.instagram.com/86_partz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Product Tabs -->
+        <div class="product-tabs">
+          <div class="tabs-header">
+            <button class="tab-button active" data-tab="description">Description</button>
+            <button class="tab-button" data-tab="specifications">Specifications</button>
+            <button class="tab-button" data-tab="reviews">Reviews</button>
+          </div>
+          
+          <div class="tabs-content">
+            <div class="tab-panel active" id="description-panel">
+              <div class="tab-content">
+                <p id="product-long-description">
+                  Detailed product description will be displayed here.
+                </p>
+              </div>
+            </div>
+            
+            <div class="tab-panel" id="specifications-panel">
+              <div class="tab-content">
+                <table class="specs-table">
+                  <tbody id="product-specifications">
+                    <!-- Specifications will be populated by JavaScript -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            
+            <div class="tab-panel" id="reviews-panel">
+              <div class="tab-content">
+                <div class="reviews-summary">
+                  <div class="reviews-average">
+                    <div class="average-rating" id="average-rating">4.8</div>
+                    <div class="rating-stars">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    </div>
+                    <div class="total-reviews">Based on <span id="total-reviews-count">12</span> reviews</div>
+                  </div>
+                  
+                  <div class="reviews-breakdown">
+                    <div class="breakdown-item">
+                      <div class="stars">5 stars</div>
+                      <div class="progress-bar">
+                        <div class="progress" style="width: 75%"></div>
+                      </div>
+                      <div class="percentage">75%</div>
+                    </div>
+                    <div class="breakdown-item">
+                      <div class="stars">4 stars</div>
+                      <div class="progress-bar">
+                        <div class="progress" style="width: 15%"></div>
+                      </div>
+                      <div class="percentage">15%</div>
+                    </div>
+                    <div class="breakdown-item">
+                      <div class="stars">3 stars</div>
+                      <div class="progress-bar">
+                        <div class="progress" style="width: 5%"></div>
+                      </div>
+                      <div class="percentage">5%</div>
+                    </div>
+                    <div class="breakdown-item">
+                      <div class="stars">2 stars</div>
+                      <div class="progress-bar">
+                        <div class="progress" style="width: 3%"></div>
+                      </div>
+                      <div class="percentage">3%</div>
+                    </div>
+                    <div class="breakdown-item">
+                      <div class="stars">1 star</div>
+                      <div class="progress-bar">
+                        <div class="progress" style="width: 2%"></div>
+                      </div>
+                      <div class="percentage">2%</div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="reviews-list" id="reviews-list">
+                  <!-- Reviews will be populated by JavaScript -->
+                </div>
+                
+                <div class="load-more-reviews">
+                  <button class="btn-secondary">Load More Reviews</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Related Products -->
+        <div class="related-products">
+          <h2 class="section-title">Related Products</h2>
+          <div class="products-grid" id="related-products">
+            <!-- Related products will be populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <span class="logo-text">gt86<span class="accent">partz</span></span>
+          </a>
+          <p class="footer-description">
+            Your trusted source for high-quality automotive parts and accessories since 1998.
+          </p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/share/1AgGndWiQW/?mibextid=wwXIfr" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://www.instagram.com/86_partz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-menu">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="catalog.html" class="footer-link">Shop</a></li>
+            <li><a href="catalog.html" class="footer-link">Catalog</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3 class="footer-title">Categories</h3>
+          <ul class="footer-menu">
+            <li><a href="catalog.html" class="footer-link">Engine Parts</a></li>
+            <li><a href="catalog.html" class="footer-link">Brake System</a></li>
+            <li><a href="catalog.html" class="footer-link">Suspension</a></li>
+            <li><a href="catalog.html" class="footer-link">Lighting</a></li>
+            <li><a href="catalog.html" class="footer-link">Interior</a></li>
+            <li><a href="catalog.html" class="footer-link">Exterior</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h3 class="footer-title">Newsletter</h3>
+          <p class="footer-description">
+            Subscribe to receive updates, access to exclusive deals, and more.
+          </p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" class="newsletter-input">
+            <button type="submit" class="newsletter-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; <span id="current-year">2023</span> gt86partz. All rights reserved.
+        </p>
+        <div class="footer-bottom-links">
+          <a href="#" class="policy-link">Privacy Policy</a>
+          <a href="#" class="policy-link">Terms of Service</a>
+          <a href="#" class="policy-link">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
