@@ -404,7 +404,37 @@ document.addEventListener("DOMContentLoaded", () => {
   ],
   "tags": ["Steering Wheel", "Carbon Fiber", "Red Leather", "Toyota", "GR", "Interior Upgrade", "Sporty"],
   "relatedProducts": ["interior-trim", "shift-knob"]
-},    
+}, 
+{
+  "id": "valenti-tail-lights",
+  "name": "Custom Clear Valenti Jewel Ultra Sequential Tail Lights for FRS/BRZ/86 (13-20)",
+  "category": "Lighting",
+  "price": 399.99,
+  "image": "images/light.jpg",
+  "images": ["images/light.jpg","images/light2.jpg", "images/light3.jpg"],
+  "rating": 4.5,
+  "reviewCount": 7,
+  "sku": "LGT-VAL-001",
+  "description": "Unique 1 of 1 custom clear Valenti Jewel Ultra Taillights for 2013-2020 FRS/BRZ/86 models. Features sequential turn signals and a captivating startup animation. Fully functional with a clear aesthetic.",
+  "longDescription": "Experience a truly unique look with these custom clear Valenti Jewel Ultra Tail Lights, designed specifically for 2013-2020 Scion FRS, Subaru BRZ, and Toyota 86 models. These are a one-of-a-kind modification, originally featuring a smoked clear appearance from Valenti, but customized to be fully clear by removing the internal red reflector. While the lights function perfectly with all features, including sequential turn signals and a distinct startup animation, the sealing has been modified. There is a possibility of minor moisture ingress (which typically clears after a day), and the lights would benefit from an improved seal for long-term protection. Despite this, all lighting functions are in perfect working order, offering a distinctive and modern upgrade to your vehicle's rear aesthetics and visibility.",
+  "features": [
+    "1 of 1 Custom Clear Design – Unique aesthetic",
+    "Sequential Turn Signal – Modern and dynamic indicator",
+    "Startup Animation – Eye-catching light sequence on ignition",
+    "Direct Fit for 2013-2020 FRS/BRZ/86 – Seamless integration",
+    "Enhanced Visibility – Bright and clear illumination"
+  ],
+  "specifications": [
+    { "name": "Brand", "value": "Valenti (Customized)" },
+    { "name": "Compatibility", "value": "2013-2020 Scion FRS, Subaru BRZ, Toyota 86" },
+    { "name": "Light Type", "value": "LED" },
+    { "name": "Functions", "value": "Running Light, Brake Light, Sequential Turn Signal, Reverse Light, Startup Animation" },
+    { "name": "Lens Color", "value": "Clear" },
+    { "name": "Condition", "value": "Used - Fully functional, re-sealed (minor moisture ingress possible, see description)" }
+  ],
+  "tags": ["Tail Lights", "Valenti", "FRS", "BRZ", "86", "Sequential", "Custom", "Lighting", "Exterior"],
+  "relatedProducts": ["led-headlight", "vland-taillights", "exterior-lighting"]
+},   
     {
       id: "fog-lights",
       name: "Vland Smocked Clear Sequence Taillight FRS BRZ 86",
@@ -710,6 +740,98 @@ document.addEventListener("DOMContentLoaded", () => {
       tags: ["Body Parts", "Handling", "Safety"],
       relatedProducts: [ "exterior-accessories", "body-repair", "hood"],
     },
+        {
+  "id": "gram-lights-57dr-eternal-blue",
+  "name": "Gram Lights 57DR 17x9 +38 5x100 - Eternal Blue Pearl Wheels (Set of 4)",
+  "category": "Wheels",
+  "price": 799.99,
+  "image": "images/whee3.jpg",
+  "images": ["images/whee3.jpg", "images/whee2.jpg", "images/whee.jpg", "images/whee1.jpg"],
+  "rating": 5.0,
+  "reviewCount": 28,
+  "sku": "WHE-GL57DR-EBP-001",
+  "description": "Unleash the full potential of your vehicle with this stunning set of Gram Lights 57DR wheels in a captivating Eternal Blue Pearl finish. Sized at 17x9 with a +38 offset and 5x100 bolt pattern, these wheels offer a popular and aggressive fitment for various performance vehicles.",
+  "longDescription": "Introducing a set of these beautiful and highly sought-after Gram Lights 57DR wheels in the exclusive Eternal Blue Pearl finish. These wheels are engineered for performance and style, featuring a lightweight yet durable construction. The 17x9 dimensions with a +38 offset and 5x100 bolt pattern make them an ideal and popular fitment for a range of iconic performance cars, including the FRS/BRZ/86 platform and various Subaru WRX models (02-07 and 11-14). The Eternal Blue Pearl finish provides a deep, vibrant blue hue that shifts beautifully under different lighting conditions, adding a unique and eye-catching aesthetic to your vehicle. These wheels are not just about looks; their robust design ensures improved handling and reduced unsprung weight for a more engaging driving experience. This special pricing offers an incredible opportunity to acquire a full set of these premium wheels. For shipping inquiries, please contact us for a personalized quote.",
+  "features": [
+    "Exclusive Eternal Blue Pearl Finish – Stunning and unique color",
+    "Popular Fitment – Ideal for FRS/BRZ/86, 02-07 WRX, 11-14 WRX",
+    "Lightweight Design – Enhances performance and handling",
+    "Durable Construction – Built for street and track use",
+    "Set of 4 Wheels – Complete package for your vehicle"
+  ],
+  "specifications": [
+    { "name": "Brand", "value": "Gram Lights" },
+    { "name": "Model", "value": "57DR" },
+    { "name": "Diameter", "value": "17 inches" },
+    { "name": "Width", "value": "9 inches" },
+    { "name": "Offset", "value": "+38 mm" },
+    { "name": "Bolt Pattern (PCD)", "value": "5 x 100" },
+    { "name": "Finish", "value": "Eternal Blue Pearl" },
+    { "name": "Quantity", "value": "Set of 4" }
+  ],
+  "tags": ["Wheels", "Gram Lights", "57DR", "Eternal Blue", "FRS", "BRZ", "86", "WRX", "Performance", "JDM"],
+  "relatedProducts": ["wheels", "wheel", "coilover-suspension"]
+},
+{
+  "id": "ceehor-carbon-fiber-steering-wheel",
+  "name": "CEEHOR Carbon Fiber & Suede Steering Wheel with Red Stripe for Subaru WRX/STI",
+  "category": "Interior",
+  "price": 299.99,
+  "image": "images/steer.jpg",
+  "images": ["images/steer.jpg", "images/steer1.jpg", "images/steer2.jpg", "images/steer3.jpg"],
+  "rating": 4.7,
+  "reviewCount": 18,
+  "sku": "STW-CEEHOR-CFS-001",
+  "description": "Upgrade your Subaru WRX/STI interior with this CEEHOR Carbon Fiber Steering Wheel. Featuring a lightweight carbon fiber construction, black suede grips with red stitching, and a sporty red 12 o'clock stripe, it's designed to enhance both aesthetics and driving feel.",
+  "longDescription": "The CEEHOR Carbon Fiber Steering Wheel is a premium upgrade for Subaru WRX/STI enthusiasts seeking enhanced performance aesthetics and tactile feedback. This steering wheel boasts a lightweight and durable construction, primarily utilizing high-quality carbon fiber for the top and bottom sections, providing a modern, race-inspired look. The grip areas are meticulously wrapped in black suede, offering a superior and comfortable hold, especially during spirited driving. Complementing the black suede is striking red contrast stitching, adding a touch of aggressive styling. A distinct red stripe at the 12 o'clock position serves as a quick reference point for steering wheel alignment. This steering wheel is designed as a direct replacement, allowing for easy installation while retaining your existing airbag and control modules. It comes brand new, ready to transform your driving cockpit.",
+  "features": [
+    "Lightweight Carbon Fiber Construction – Durable and sporty",
+    "Suede Grip Sections – Enhanced comfort and grip",
+    "Red Contrast Stitching – Aggressive aesthetic detail",
+    "Red 12 O'clock Stripe – Visual steering alignment aid",
+    "Direct Replacement Fitment – Easy installation for Subaru WRX/STI"
+  ],
+  "specifications": [
+    { "name": "Brand", "value": "CEEHOR" },
+    { "name": "Material", "value": "Carbon Fiber, Suede" },
+    { "name": "Stitching Color", "value": "Black" },
+    { "name": "Stripe Color", "value": "Black" },
+    { "name": "Compatibility", "value": "Subaru WRX/STI (specific years may vary, please confirm fitment)" }
+  ],
+  "tags": ["Steering Wheel", "Carbon Fiber", "Suede", "WRX", "STI", "Subaru", "Interior", "Performance"],
+  "relatedProducts": ["shift-knob", "interior-trim", "pedal-set"]
+},
+{
+  "id": "obx-catback-exhaust",
+  "name": "OBX Stainless Steel Catback Exhaust for BRZ/FR-S/GT86 (13-22)",
+  "category": "Exhaust",
+  "price": 499.99,
+  "image": "images/ex.jpg",
+  "images": ["images/ex.jpg", "images/ex1.jpg", "images/ex2.jpg"],
+  "rating": 4.6,
+  "reviewCount": 35,
+  "sku": "EXH-OBX-CATB-001",
+  "description": "Upgrade your vehicle's performance and sound with this OBX Stainless Steel Catback Exhaust system. Designed for 2013-2022 Subaru BRZ, 2013-2021 Scion FR-S, and 2012-2021 Toyota FT/GT86, it offers improved exhaust flow and a sportier tone.",
+  "longDescription": "Enhance your driving experience with the OBX Stainless Steel Catback Exhaust system, specifically engineered for the 2013-2022 Subaru BRZ, 2013-2021 Scion FR-S, and 2012-2021 Toyota FT/GT86 platforms. Constructed from high-quality T304 stainless steel, this exhaust system ensures maximum durability, corrosion resistance, and a brilliant, polished finish. The design features smooth mandrel bends for optimal exhaust gas flow, which can lead to increased horsepower and torque, along with a more aggressive and satisfying exhaust note. This catback system is a direct bolt-on replacement for your factory exhaust, utilizing existing hangers and mounting points for a straightforward installation. Included in the package are all necessary clamps and hardware for a complete setup. Experience a noticeable improvement in your vehicle's performance and a more exhilarating sound, all while adding a touch of polished style to your rear end.",
+  "features": [
+    "T304 Stainless Steel Construction – Enhanced durability and corrosion resistance",
+    "Mandrel-Bent Piping – Optimized exhaust flow for performance gains",
+    "Sporty Exhaust Note – Deeper and more aggressive sound",
+    "Direct Bolt-On Installation – Easy replacement of factory exhaust",
+    "Polished Finish – Attractive visual appeal",
+    "Complete Kit – Includes all necessary hardware for installation"
+  ],
+  "specifications": [
+    { "name": "Brand", "value": "OBX" },
+    { "name": "Material", "value": "T304 Stainless Steel" },
+    { "name": "System Type", "value": "Catback" },
+    { "name": "Pipe Diameter", "value": "Standard (please confirm specific diameter with manufacturer if critical)" },
+    { "name": "Tip Style", "value": "Dual Polished Tips" },
+    { "name": "Compatibility", "value": "2013-2022 Subaru BRZ, 2013-2021 Scion FR-S, 2012-2021 Toyota FT/GT86" }
+  ],
+  "tags": ["Exhaust", "Catback", "Stainless Steel", "BRZ", "FR-S", "GT86", "Toyota", "Subaru", "Scion", "Performance", "Sound"],
+  "relatedProducts": ["headers", "exhaust-system", "bumper"]
+}
   ]
 
   // Sample review data
@@ -779,6 +901,7 @@ document.addEventListener("DOMContentLoaded", () => {
       product: "Light Kit",
       comment: "These lights are super bright and look great. Installation was a bit challenging.",
     },
+
   ]
 
   // Calculate review statistics
