@@ -258,7 +258,7 @@ document.addEventListener("DOMContentLoaded", () => {
       reviewCount: 60,
       sku: "WHE-SKH-012",
       description:
-        "Upgrade your vehicle’s performance and style with these high-quality TE37 REPS wheels. Designed for an aggressive fitment, these 18x10.5 +20 wheels feature a 5x100 bolt pattern, making them compatible with a wide range of performance vehicles. The ceramic-coated finish ensures long-lasting protection against corrosion and brake dust, while the lightweight forged-inspired construction enhances handling and acceleration.",
+        "Upgrade your vehicle's performance and style with these high-quality TE37 REPS wheels. Designed for an aggressive fitment, these 18x10.5 +20 wheels feature a 5x100 bolt pattern, making them compatible with a wide range of performance vehicles. The ceramic-coated finish ensures long-lasting protection against corrosion and brake dust, while the lightweight forged-inspired construction enhances handling and acceleration.",
       longDescription:
         "Transform your vehicle's dynamics and aesthetics with the Konig Hypergram 17x9 +40 (5x100) wheel in a sleek Gunmetal Grey finish. Utilizing Konig's advanced Flow-Formed Technology, the Hypergram is manufactured by applying extreme pressure to the wheel's inner barrel while spinning, stretching, and shaping the aluminum. This process aligns the grain structure of the aluminum, resulting in a lighter and stronger wheel than traditional cast methods, without the expense of a fully forged wheel. The aggressive 17x9 dimensions combined with a +40 offset push the wheels out for a more muscular stance and improved cornering stability, making it an ideal choice for track enthusiasts and daily drivers alike seeking a significant performance upgrade. The classic 5x100 bolt pattern ensures compatibility with a wide range of popular performance vehicles, while the durable Gunmetal Grey finish provides a sophisticated, motorsport-inspired look that complements any vehicle color. Experience sharper turn-in, reduced unsprung mass, and a head-turning appearance",
       features: [
@@ -680,7 +680,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "hood",
       name: "TS Style Carbon Fibre Hood",
       category: "HOOD",
-      price: 549.99,
+      price: 699.99,
       image: "images/hood.jpg",
       images: ["images/hood.jpg", "images/hood1.jpg"],
       rating: 4.9,
@@ -831,6 +831,127 @@ document.addEventListener("DOMContentLoaded", () => {
   ],
   "tags": ["Exhaust", "Catback", "Stainless Steel", "BRZ", "FR-S", "GT86", "Toyota", "Subaru", "Scion", "Performance", "Sound"],
   "relatedProducts": ["headers", "exhaust-system", "bumper"]
+},
+{
+  "id": "verus-engineering-rear-lower-control-arms",
+  "name": "Verus Engineering Spherical Rear Lower Control Arms - Anodized Black",
+  "category": "Suspension",
+  "price": 499.99,
+  "image": "images/arm.jpg",
+  "images": ["images/arm.jpg", "images/arm1.jpg", "images/arm2.jpg"],
+  "rating": 4.9,
+  "reviewCount": 12,
+  "sku": "SUSP-VERUS-RLCA-001",
+  "description": "Enhance your vehicle's handling and adjustability with these Verus Engineering Rear Lower Control Arms. Featuring spherical inboard mounts and an anodized black finish, these arms offer superior performance and precision for various Subaru and Toyota models.",
+  "longDescription": "Upgrade your vehicle's suspension with this set of Verus Engineering Rear Lower Control Arms, designed for improved handling, stability, and alignment adjustability. These specific arms are the spherical inboard mounting variant, providing a more direct and precise feel compared to rubber bushing alternatives by eliminating deflection. Finished in a durable anodized black, they offer both functional benefits and a clean, aggressive look. Originally removed from a 2023 GR86, these control arms are also compatible with a wide range of popular performance platforms, including Subaru WRX/STI models from 2008 onwards, and all 2013+ BRZ/FR-S/86 models. This makes them a versatile and valuable upgrade for enthusiasts looking to fine-tune their suspension for track use or spirited driving. The set includes all necessary hardware for installation and comes ready to ship, providing an excellent opportunity to enhance your vehicle's rear suspension geometry and response.",
+  "features": [
+    "Spherical Inboard Mounting – Enhanced precision and reduced deflection",
+    "Anodized Black Finish – Durable and aesthetically pleasing",
+    "Adjustable Design – Allows for precise alignment tuning",
+    "Improved Handling – Sharper turn-in and increased stability",
+    "Wide Compatibility – Fits GR86, WRX/STI (2008+), BRZ/FR-S/86 (2013+)",
+    "High-Quality Construction – Built by Verus Engineering for performance"
+  ],
+  "specifications": [
+    { "name": "Brand", "value": "Verus Engineering" },
+    { "name": "Component", "value": "Rear Lower Control Arms" },
+    { "name": "Mounting Type", "value": "Spherical (Inboard)" },
+    { "name": "Finish", "value": "Anodized Black" },
+    { "name": "Compatibility", "value": "2023 GR86, Subaru WRX/STI (2008+), Subaru BRZ (2013+), Scion FR-S (2013+), Toyota 86 (2013+)" }
+  ],
+  "tags": ["Suspension", "Control Arms", "Verus Engineering", "GR86", "WRX", "STI", "BRZ", "FR-S", "86", "Handling", "Performance", "Alignment"],
+  "relatedProducts": ["hood", "sway-bars", "bushings"]
+},
+{
+  "id": "brz-86-frs-carbon-fiber-fenders",
+  "name": "Lightweight Vented Carbon Fiber Fenders for BRZ/86/FRS (2013-2022)",
+  "category": "Exterior",
+  "price": 299.99,
+  "image": "images/fender.jpg",
+  "images": ["images/fender.jpg", "images/fender1.jpg"],
+  "rating": 4.9,
+  "reviewCount": 9,
+  "sku": "EXT-CFF-BRZ86FRS-001",
+  "description": "Upgrade your 2013-2022 BRZ, 86, or FRS with these lightweight, real vented carbon fiber fenders. Weighing only 3-4 lbs each, they offer a significant weight reduction and an aggressive, performance-oriented aesthetic. In perfect condition.",
+  "longDescription": "Transform the front end of your 2013-2022 Subaru BRZ, Toyota 86, or Scion FR-S with these premium lightweight vented carbon fiber fenders. Crafted from genuine carbon fiber, these fenders not only provide a striking visual upgrade but also contribute to significant weight savings, with each fender weighing approximately 3-4 lbs. The integrated vents are designed to improve aerodynamic efficiency and help dissipate heat from the engine bay or brakes, making them ideal for both street and track applications. These fenders are in perfect condition, ensuring a flawless fit and finish for your vehicle. Elevate your car's exterior with a race-inspired look and functional benefits that only real carbon fiber can provide. This set offers an excellent opportunity to achieve a high-performance aesthetic and reduce unsprung weight at an exceptional value.",
+  "features": [
+    "Real Carbon Fiber Construction – Premium, lightweight material",
+    "Vented Design – Improves aerodynamics and heat dissipation",
+    "Significant Weight Reduction – Approximately 3-4 lbs per fender",
+    "Perfect Condition – Flawless fit and finish",
+    "Direct Fitment – Designed for 2013-2022 BRZ/86/FRS models",
+    "Aggressive Styling – Enhances vehicle's sporty appearance"
+  ],
+  "specifications": [
+    { "name": "Material", "value": "Carbon Fiber" },
+    { "name": "Type", "value": "Vented Fenders" },
+    { "name": "Weight", "value": "Approx. 3-4 lbs (per fender)" },
+    { "name": "Compatibility", "value": "2013-2022 Subaru BRZ, Toyota 86, Scion FR-S" },
+    { "name": "Condition", "value": "Perfect" }
+  ],
+  "tags": ["Fenders", "Carbon Fiber", "Vented", "BRZ", "86", "FRS", "Toyota", "Subaru", "Scion", "Exterior", "Lightweight", "Performance"],
+  "relatedProducts": ["hoods", "side-skirts", "spoilers"]
+},
+{
+  "id": "vrs-style-carbon-fiber-hood",
+  "name": "VRS Style Carbon Fiber Vented Hood for FR-S/86/BRZ (2013-2020)",
+  "category": "Exterior",
+  "price": 549.99,
+  "image": "images/hoo.jpg",
+  "images": ["images/hoo.jpg", "images/hoo1.jpg", "images/hoo2.jpg", "images/hoo3.jpg"],
+  "rating": 4.8,
+  "reviewCount": 11,
+  "sku": "EXT-CFH-VRS-001",
+  "description": "Enhance your 2013-2020 Scion FR-S, Toyota 86, or Subaru BRZ with this VRS Style Carbon Fiber Vented Hood. Designed for aggressive styling and improved engine bay cooling, this lightweight hood is a direct fit upgrade.",
+  "longDescription": "Introducing the VRS Style Carbon Fiber Vented Hood, a premium exterior upgrade for your 2013-2020 Scion FR-S, Toyota 86, or Subaru BRZ. This hood is crafted from high-quality, genuine carbon fiber, offering a significant weight reduction over the factory hood while providing exceptional strength and durability. The aggressive VRS style features prominent vents that not only contribute to a more race-inspired aesthetic but also serve a functional purpose by aiding in engine bay heat extraction, which can be beneficial for performance and longevity. The clear coat finish over the carbon fiber weave provides a deep, glossy shine and protects against UV degradation. This hood is designed for a direct fit, utilizing OEM mounting points for a straightforward installation, making it an ideal choice for enthusiasts looking to combine striking looks with practical performance benefits. Price includes shipping, making it a convenient and valuable enhancement for your vehicle.",
+  "features": [
+    "Genuine Carbon Fiber Construction – Lightweight and durable",
+    "VRS Style Design – Aggressive and sporty aesthetic",
+    "Integrated Vents – Improves engine bay cooling and airflow",
+    "High Gloss Finish – UV protected clear coat for lasting shine",
+    "Direct Bolt-On Installation – Utilizes OEM mounting points",
+    "Enhanced Performance Look – Transforms the vehicle's front profile"
+  ],
+  "specifications": [
+    { "name": "Material", "value": "Carbon Fiber" },
+    { "name": "Style", "value": "VRS Vented" },
+    { "name": "Compatibility", "value": "2013-2020 Scion FR-S, Toyota 86, Subaru BRZ" },
+    { "name": "Finish", "value": "Gloss Carbon Fiber" },
+    { "name": "Installation", "value": "Direct Bolt-On" }
+  ],
+  "tags": ["Hood", "Carbon Fiber", "Vented", "VRS Style", "FR-S", "86", "BRZ", "Toyota", "Scion", "Subaru", "Exterior", "Lightweight", "Cooling"],
+  "relatedProducts": ["brz-86-frs-carbon-fiber-fenders", "hood", "spoilers"]
+},
+{
+  "id": "recaro-pole-position-pepita-seats",
+  "name": "Recaro Pole Position FIA Seats with Custom Pepita Inserts (Pair)",
+  "category": "Interior",
+  "price": 1295,
+  "image": "images/sit.jpg",
+  "images": ["images/sit.jpg", "images/sit1.jpg", "images/sit2.jpg"],
+  "rating": 5.0,
+  "reviewCount": 7,
+  "sku": "INT-REC-PP-PEPT-001",
+  "description": "A rare pair of Recaro Pole Position FIA racing seats, enhanced with custom black and white Pepita fabric inserts. These seats are in excellent condition, offering both high-performance support and a classic, distinctive aesthetic. FIA homologated until 2027.",
+  "longDescription": "Experience the perfect blend of performance, safety, and unique style with this set of two Recaro Pole Position FIA racing seats. These iconic fixed-back bucket seats are renowned for their exceptional lateral support and lightweight construction, making them a favorite among track enthusiasts and those seeking a more engaging driving experience. What sets this pair apart are the meticulously crafted custom black and white Pepita fabric inserts, a timeless pattern that adds a sophisticated and classic touch to the race-bred design. Both seats are in excellent, well-cared-for condition, ensuring they are ready for immediate installation. Crucially, they hold a valid FIA homologation with an expiration date of 2027, making them suitable for sanctioned motorsport events. While the original MSRP for a single Pole Position seat is $1,295, the addition of the custom Pepita inserts, costing $799.99 for the pair, elevates their value and exclusivity, offering a unique opportunity to own a truly special interior upgrade.",
+  "features": [
+    "FIA Homologated – Certified for motorsport use (Expires 2027)",
+    "Custom Pepita Inserts – Unique black and white pattern for classic style",
+    "Excellent Condition – Well-maintained and ready for use",
+    "Lightweight Fixed-Back Design – Superior support and weight savings",
+    "High-Quality Construction – Renowned Recaro durability and craftsmanship",
+    "Enhanced Driving Experience – Improved lateral support for spirited driving"
+  ],
+  "specifications": [
+    { "name": "Brand", "value": "Recaro" },
+    { "name": "Model", "value": "Pole Position FIA" },
+    { "name": "Quantity", "value": "Pair (2 Seats)" },
+    { "name": "Upholstery", "value": "Black Fabric with Custom Black & White Pepita Inserts" },
+    { "name": "Homologation", "value": "FIA (Expires 2027)" },
+    { "name": "Construction", "value": "Fixed-Back Bucket Seat" }
+  ],
+  "tags": ["Recaro", "Pole Position", "FIA", "Racing Seats", "Bucket Seats", "Pepita", "Custom", "Interior", "Performance", "Track"],
+  "relatedProducts": ["seat-rails", "harnesses", "roll-cages"]
 }
   ]
 
@@ -976,6 +1097,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <span>Total:</span>
             <span class="cart-total-price">$0.00</span>
           </div>
+          <input type="email" id="customer-email" class="customer-email-input" placeholder="Your email address" required style="margin: 1rem 0; width: 100%; padding: 0.5rem; border-radius: 0.375rem; border: 1px solid #E2E8F0;">
           <button class="btn-primary w-full checkout-button">Proceed to Checkout</button>
           <button class="btn-secondary w-full continue-shopping">Continue Shopping</button>
         </div>
@@ -1016,19 +1138,8 @@ document.addEventListener("DOMContentLoaded", () => {
           <button class="btn-primary start-shopping">Start Shopping</button>
         </div>
       `
-
-      // Add event listener to "Start Shopping" button
-      const startShoppingBtn = document.querySelector(".start-shopping")
-      if (startShoppingBtn) {
-        startShoppingBtn.addEventListener("click", () => {
-          closeCart()
-
-          // Redirect to catalog if not already there
-          if (!window.location.pathname.includes("catalog.html")) {
-            window.location.href = "catalog.html"
-          }
-        })
-      }
+      // Always show total as $0.00 when cart is empty
+      if (cartTotalPrice) cartTotalPrice.textContent = "$0.00"
     } else {
       let cartItemsHTML = ""
       let cartTotal = 0
@@ -1270,27 +1381,43 @@ document.addEventListener("DOMContentLoaded", () => {
             subtotal: product.price * item.quantity,
           }
         })
-
         // Calculate total
         const cartTotal = cartItems.reduce((total, item) => total + item.subtotal, 0)
-
         // Prepare email content
         let emailBody = "New Order Details:\n\n"
         cartItems.forEach((item) => {
           emailBody += `${item.name} - Quantity: ${item.quantity} - $${item.subtotal.toFixed(2)}\n`
         })
         emailBody += `\nTotal: $${cartTotal.toFixed(2)}`
-
-        // Send email (using mailto for demonstration)
-        const emailSubject = "New Order from gt86partz"
-        const mailtoLink = `mailto:orders@gt86partz.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`
-        window.open(mailtoLink)
-
-        // Show confirmation
-        alert("Thank you! We will get back to you within 24hours.")
-
-        // Close cart modal
-        closeCart()
+        // Get user email from input
+        const customerEmailInput = document.getElementById('customer-email')
+        const customerEmail = customerEmailInput ? customerEmailInput.value.trim() : ''
+        if (!customerEmail) {
+          alert('Please enter your email address before proceeding to checkout.')
+          return
+        }
+        // Use emailjs to send email
+        if (window.emailjs) {
+          emailjs.send('service_iwkvrzt', 'template_gnfpry9', {
+            message: emailBody,
+            subject: 'New Order from gt86partz',
+            to_email: 'orders@gt86partz.com',
+            email: customerEmail, // Pass user's email for Reply-To
+          }, 'EqF42_KrxbX5sgNKj')
+          .then(function(response) {
+            alert('Thank you! We will get back to you within 24 hours.')
+            // Clear cart after successful send
+            cart.length = 0
+            localStorage.setItem("gt86partz-cart", JSON.stringify(cart))
+            updateCartBadge()
+            renderCart()
+            closeCart()
+          }, function(error) {
+            alert('There was an error sending your order. Please try again later.')
+          })
+        } else {
+          alert('Email service not available. Please try again later.')
+        }
       })
     }
 
