@@ -1405,6 +1405,15 @@ document.addEventListener("DOMContentLoaded", () => {
             email: customerEmail, // Pass user's email for Reply-To
           }, 'EqF42_KrxbX5sgNKj')
           .then(function(response) {
+            // Send order info to Smartsupp chat
+            if (window.smartsupp) {
+              let smartsuppMsg = `New order placed!\nEmail: ${customerEmail}\n`;
+              cartItems.forEach((item) => {
+                smartsuppMsg += `${item.name} x${item.quantity} - $${item.subtotal.toFixed(2)}\n`;
+              });
+              smartsuppMsg += `Total: $${cartTotal.toFixed(2)}`;
+              smartsupp('message', smartsuppMsg);
+            }
             alert('Thank you! We will get back to you within 24 hours.')
             // Clear cart after successful send
             cart.length = 0
