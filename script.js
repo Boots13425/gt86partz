@@ -1183,6 +1183,25 @@ document.addEventListener("DOMContentLoaded", () => {
       cartItemsContainer.innerHTML = cartItemsHTML
       cartTotalPrice.textContent = `$${cartTotal.toFixed(2)}`
 
+      // Ensure email input is present in the cart summary
+      const cartSummary = document.querySelector('.cart-summary');
+      if (cartSummary && !document.getElementById('customer-email')) {
+        const emailInput = document.createElement('input');
+        emailInput.type = 'email';
+        emailInput.id = 'customer-email';
+        emailInput.className = 'customer-email-input';
+        emailInput.placeholder = 'Your email address';
+        emailInput.required = true;
+        emailInput.style.margin = '1rem 0';
+        emailInput.style.width = '100%';
+        emailInput.style.padding = '0.5rem';
+        emailInput.style.borderRadius = '0.375rem';
+        emailInput.style.border = '1px solid #E2E8F0';
+        // Insert above the checkout button
+        const checkoutBtn = cartSummary.querySelector('.checkout-button');
+        cartSummary.insertBefore(emailInput, checkoutBtn);
+      }
+
       // Add event listeners to quantity buttons and remove buttons
       document.querySelectorAll(".decrease-quantity").forEach((button) => {
         button.addEventListener("click", (e) => {
