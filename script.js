@@ -923,6 +923,65 @@ document.addEventListener("DOMContentLoaded", () => {
   "relatedProducts": ["brz-86-frs-carbon-fiber-fenders", "hood", "spoilers"]
 },
 {
+  "id": "gr86-brz-led-tail-lights-elite-series",
+  "name": "Toyota GR86 - Subaru BRZ LED Tail Lights - The Elite Series",
+  "category": "Lighting",
+  "price": 299.99,
+  "image": "images/led1.jpg",
+  "images": ["images/led1.jpg", "images/led2.jpg", "images/led.jpg"],
+  "rating": 0,
+  "reviewCount": 0,
+  "sku": "LGT-LED-GR86BRZ-ELT",
+  "description": "Upgrade your Toyota GR86 or Subaru BRZ with 'The Elite Series' LED Tail Lights. These high-quality tail lights offer a modern, sleek look and enhanced visibility, designed for a direct replacement.",
+  "longDescription": "Introducing 'The Elite Series' LED Tail Lights, specifically designed for the Toyota GR86 and Subaru BRZ. These tail lights are in excellent condition, offering a significant aesthetic and functional upgrade over stock lights. Featuring advanced LED technology, they provide brighter illumination for improved safety and a distinct, modern appearance that will make your vehicle stand out. The sleek design and precise fit ensure a seamless integration with your vehicle's rear end. Built with durable materials, these lights are resistant to weather and wear, ensuring long-lasting performance. Installation is straightforward, utilizing original mounting points and connectors for a plug-and-play setup. The price includes shipping, making it a convenient and valuable enhancement for your GR86 or BRZ.",
+  "features": [
+    "Elite Series Design – Modern and aggressive styling",
+    "Full LED Illumination – Brighter and more efficient lighting",
+    "Enhanced Visibility – Improves safety on the road",
+    "Excellent Condition – Ready for immediate installation",
+    "Direct Replacement – Utilizes OEM mounting points and connectors",
+    "Durable Construction – Built to withstand various weather conditions"
+  ],
+  "specifications": [
+    { "name": "Lighting Type", "value": "LED" },
+    { "name": "Series", "value": "The Elite Series" },
+    { "name": "Compatibility", "value": "Toyota GR86, Subaru BRZ (Specific Years May Vary, confirm with seller)" },
+    { "name": "Condition", "value": "Excellent" },
+    { "name": "Installation", "value": "Direct Plug-and-Play" }
+  ],
+  "tags": ["LED Tail Lights", "valenti-tail-lights", "GR86", "BRZ", "Toyota", "Subaru", "Lighting", "Elite Series", "Exterior"],
+  "relatedProducts": ["hood", "brz-86-frs-carbon-fiber-fenders", "headlights", "valenti-tail-lights"]
+},
+{
+  "id": "toyota-gt86-front-bumper",
+  "name": "Toyota GT86 Front Bumper",
+  "category": "Exterior",
+  "price": 499.99,
+  "image": "images/bump.jpg",
+  "images": ["images/bump.jpg", "images/bump1.jpg", "images/bump2.jpg"],
+  "rating": 0,
+  "reviewCount": 0,
+  "sku": "EXT-FB-GT86-001",
+  "description": "Replace or upgrade the front bumper on your Toyota GT86 with this direct-fit replacement. Designed to match the original aesthetics, it offers a clean and refreshed look for your vehicle.",
+  "longDescription": "This is a direct replacement front bumper for the Toyota GT86, perfect for repairing collision damage or simply refreshing the look of your vehicle. Manufactured to OEM specifications, it ensures a precise fit and easy installation utilizing existing mounting points. The bumper comes unpainted, allowing you to color-match it perfectly to your vehicle's existing paint scheme. It's constructed from durable automotive-grade materials designed to withstand daily road conditions and provide long-lasting performance. The price includes shipping, providing a convenient and cost-effective solution for your GT86's front end.",
+  "features": [
+    "Direct OEM Replacement – Ensures a precise fit",
+    "Durable Construction – Made from high-quality automotive-grade materials",
+    "Unpainted Finish – Ready for custom color matching",
+    "Easy Installation – Utilizes factory mounting points",
+    "Restores Original Aesthetics – Refreshes the vehicle's front profile"
+  ],
+  "specifications": [
+    { "name": "Material", "value": "Automotive Grade ABS Plastic (or similar)" },
+    { "name": "Style", "value": "OEM Replacement" },
+    { "name": "Compatibility", "value": "Toyota GT86 (Specific Years May Vary, confirm with seller)" },
+    { "name": "Finish", "value": "Unpainted (Primed)" },
+    { "name": "Installation", "value": "Direct Bolt-On" }
+  ],
+  "tags": ["Front Bumper", "Bumper", "GT86", "Toyota", "Exterior", "Replacement"],
+  "relatedProducts": ["hood", "brz-86-frs-carbon-fiber-fenders", "headlights"]
+},
+{
   "id": "recaro-pole-position-pepita-seats",
   "name": "Recaro Pole Position FIA Seats with Custom Pepita Inserts (Pair)",
   "category": "Interior",
@@ -952,6 +1011,216 @@ document.addEventListener("DOMContentLoaded", () => {
   ],
   "tags": ["Recaro", "Pole Position", "FIA", "Racing Seats", "Bucket Seats", "Pepita", "Custom", "Interior", "Performance", "Track"],
   "relatedProducts": ["seat-rails", "harnesses", "roll-cages"]
+},
+{
+  "id": "tomei-el-catless-headers",
+  "name": "TOMEI Equal Length Catless Headers (Heat Wrapped)",
+  "category": "Exhaust",
+  "price": 349.99,
+  "image": "images/header.jpg",
+  "images": ["images/header.jpg", "images/herder1.jpg"],
+  "rating": 0,
+  "reviewCount": 0,
+  "sku": "EXH-HDR-TOMEI-ELC",
+  "description": "Used Tomei Equal Length Catless Headers, pre-heat wrapped and complete with gaskets and hardware. Perfect for first and second-gen FR-S/86/BRZ models, offering enhanced exhaust flow.",
+  "longDescription": "Upgrade your first or second-generation FR-S, 86, or BRZ with these high-performance TOMEI Equal Length Catless Headers. These headers are in excellent condition, having been used for approximately 5,000 miles with no reported issues. They come pre-applied with heat wrap, which helps to maintain exhaust gas temperature for optimal flow and protect surrounding engine bay components from excessive heat. The set includes all necessary gaskets and hardware for a straightforward installation. By eliminating the catalytic converter, these headers provide a significant improvement in exhaust flow and a more aggressive exhaust note. This is a fantastic opportunity to acquire a top-tier performance upgrade at a great value. Price includes shipping, making it a convenient option for enthusiasts.",
+  "features": [
+    "TOMEI Equal Length Design – Optimized exhaust flow for performance",
+    "Catless – Maximizes exhaust gas velocity and sound",
+    "Pre-Heat Wrapped – Reduces engine bay temperatures and improves efficiency",
+    "Complete Kit – Includes gaskets and all necessary hardware for installation",
+    "Excellent Condition – Used for approximately 5,000 miles with no issues",
+    "Broad Compatibility – Fits both 1st and 2nd Gen FR-S/86/BRZ"
+  ],
+  "specifications": [
+    { "name": "Brand", "value": "TOMEI" },
+    { "name": "Type", "value": "Equal Length Catless Headers" },
+    { "name": "Material", "value": "Stainless Steel (likely)" },
+    { "name": "Condition", "value": "Used (Excellent)" },
+    { "name": "Mileage Used", "value": "Approx. 5,000 miles" },
+    { "name": "Compatibility", "value": "First and Second Generation Scion FR-S, Toyota 86, Subaru BRZ" },
+    { "name": "Includes", "value": "Headers, Heat Wrap, Gaskets, Hardware" }
+  ],
+  "tags": ["Headers", "Exhaust", "Catless", "TOMEI", "Equal Length", "Heat Wrapped", "FR-S", "86", "BRZ", "Toyota", "Scion", "Subaru", "Performance"]
+},
+{
+  "id": "gt86-brz-frs-3inch-front-pipe",
+  "name": "3-inch Front Pipe for GT86 / BRZ / FR-S",
+  "category": "Exhaust",
+  "price": 199.99,
+  "image": "images/pipe.jpg",
+  "images": ["images/pipe.jpg", "images/pipe1.jpg", "images/pipe2.jpg"],
+  "rating": 0,
+  "reviewCount": 0,
+  "sku": "EXH-FP-3INCH-GT86",
+  "description": "Brand new 3-inch front pipe designed for Toyota GT86, Subaru BRZ, and Scion FR-S models. This performance upgrade optimizes exhaust flow for improved horsepower and torque.",
+  "longDescription": "Enhance the exhaust system of your Toyota GT86, Subaru BRZ, or Scion FR-S with this brand new 3-inch front pipe. This is a high-quality, performance-oriented component designed to replace the restrictive factory front pipe, allowing for a significant improvement in exhaust gas flow. The larger 3-inch diameter helps to reduce back pressure, which can lead to gains in horsepower and torque, as well as a more aggressive exhaust note. Crafted from durable stainless steel, it's built to withstand the rigors of performance driving and daily use. This front pipe is an ideal upgrade for those looking to maximize their vehicle's exhaust efficiency. The price includes shipping, offering a convenient and valuable addition to your vehicle's performance setup.",
+  "features": [
+    "Brand New Condition – Unused and ready for installation",
+    "3-inch Diameter – Optimizes exhaust flow for performance gains",
+    "Durable Construction – Made from high-quality stainless steel (assumed from image)",
+    "Improved Horsepower and Torque – Reduces exhaust back pressure",
+    "Aggressive Exhaust Note – Enhances the vehicle's sound",
+    "Direct Fit – Designed for specific vehicle models"
+  ],
+  "specifications": [
+    { "name": "Diameter", "value": "3 inch" },
+    { "name": "Material", "value": "Stainless Steel (assumed)" },
+    { "name": "Condition", "value": "Brand New" },
+    { "name": "Compatibility", "value": "Toyota GT86, Subaru BRZ, Scion FR-S (All Generations)" },
+    { "name": "Installation", "value": "Bolt-on Replacement" }
+  ],
+  "tags": ["Front Pipe", "Exhaust", "3-inch", "GT86", "BRZ", "FR-S", "Toyota", "Subaru", "Scion", "Performance", "Brand New"]
+},
+{
+  "id": "gr86-genuine-bumper-black-silica",
+  "name": "Toyota GR86 Genuine Bumper - Black Silica",
+  "category": "Exterior",
+  "price": 549.99,
+  "image": "images/grill.jpg",
+  "images": ["images/grill.jpg", "images/grill1.jpg", "images/grill2.jpg", "images/grill3.jpg"],
+  "rating": 0,
+  "reviewCount": 0,
+  "sku": "EXT-FB-GR86-BLKSIL",
+  "description": "Brand new, genuine Toyota GR86 front bumper in Black Silica. Perfect condition, ready for direct replacement or upgrade to restore your vehicle's pristine look.",
+  "longDescription": "Presenting a brand new, genuine Toyota GR86 front bumper in the sleek Black Silica (color code 899). This bumper is in perfect, factory-fresh condition, ensuring a flawless appearance and fit for your GR86. It's an ideal replacement for a damaged bumper or for those looking to revert to an OEM look. Being a genuine part, it guarantees precise fitment and compatibility with all existing mounting points and components. The Black Silica finish provides a deep, glossy look straight out of the box, saving you the hassle of painting. This is a premium component for maintaining the original quality and aesthetics of your Toyota GR86. The price includes shipping, offering a convenient and valuable solution for your vehicle's exterior needs.",
+  "features": [
+    "Genuine Toyota Part – Ensures perfect fitment and quality",
+    "Brand New Condition – Flawless and ready for installation",
+    "Black Silica Finish (Color Code 899) – Pre-painted for convenience",
+    "Perfect Condition – No scratches, dents, or imperfections",
+    "Direct Replacement – Utilizes OEM mounting points",
+    "Restores Factory Aesthetics – Maintains the original premium look of your GR86"
+  ],
+  "specifications": [
+    { "name": "Brand", "value": "Toyota (Genuine OEM)" },
+    { "name": "Part Type", "value": "Front Bumper" },
+    { "name": "Color", "value": "Black Silica (Color Code 899)" },
+    { "name": "Condition", "value": "Brand New" },
+    { "name": "Compatibility", "value": "Toyota GR86 (Specific Years May Vary, confirm with seller)" },
+    { "name": "Installation", "value": "Direct Bolt-On" }
+  ],
+  "tags": ["Front Bumper", "Bumper", "GR86", "Toyota", "Genuine", "OEM", "Black Silica", "Exterior", "Brand New"]
+},
+{
+  "id": "jdm-brz-ts-wing",
+  "name": "Authentic JDM BRZ tS Wing",
+  "category": "Exterior",
+  "price": 249.99,
+  "image": "images/spoil.jpg",
+  "images": ["images/spoil.jpg", "images/spoil1.jpg", "images/spoil2.jpg", "images/spoil3.jpg"],
+  "rating": 0,
+  "reviewCount": 0,
+  "sku": "EXT-SPLR-BRZTS-JDM",
+  "description": "Authentic JDM-spec Subaru BRZ tS wing in 9.5/10 condition. Enhance the aggressive styling and aerodynamic performance of your BRZ with this genuine spoiler.",
+  "longDescription": "For sale is an authentic JDM (Japanese Domestic Market) specification Subaru BRZ tS wing, rated at an excellent 9.5/10 condition. This is a rare opportunity to acquire a genuine piece of tS aerodynamic enhancement, known for its aggressive styling and functional downforce. The wing features a sleek design, likely constructed from high-quality materials such as carbon fiber or a durable composite with a carbon fiber weave finish (based on the image), providing both lightweight performance and a premium look. It will significantly enhance the rear profile of your BRZ, giving it a more track-ready appearance. Installation typically involves drilling, but the precise fitment of a genuine part ensures a clean integration. This wing is perfect for enthusiasts looking to complete a tS-inspired build or simply add a distinctive, high-quality spoiler to their BRZ. The price includes shipping, making it a convenient and valuable upgrade.",
+  "features": [
+    "Authentic JDM Specification – Genuine Subaru BRZ tS component",
+    "Excellent Condition – Rated 9.5/10, very well maintained",
+    "Aggressive Styling – Enhances the sporty look of your BRZ",
+    "Aerodynamic Enhancement – Provides functional downforce (implied by design)",
+    "High-Quality Construction – Durable materials, likely carbon fiber or composite",
+    "Rare Find – Authentic JDM part for a unique build"
+  ],
+  "specifications": [
+    { "name": "Type", "value": "Rear Wing / Spoiler" },
+    { "name": "Edition", "value": "tS (JDM-spec)" },
+    { "name": "Material", "value": "Carbon Fiber / Composite (based on visual)" },
+    { "name": "Condition", "value": "Used (9.5/10)" },
+    { "name": "Compatibility", "value": "Subaru BRZ (Specific Years May Vary, confirm with seller)" },
+    { "name": "Installation", "value": "Drill-on (standard for this type of wing)" }
+  ],
+  "tags": ["Wing", "Spoiler", "BRZ", "tS", "JDM", "Subaru", "Exterior", "Carbon Fiber", "Aerodynamic", "Authentic"]
+},
+{
+  "id": "enkei-wheels-yokohama-advan-apex",
+  "name": "Enkei Wheels with Yokohama Advan Apex Tires (Staggered)",
+  "category": "Wheels & Tires",
+  "price": 1199.99,
+  "image": "images/tire.jpg",
+  "images": ["images/tire.jpg", "images/tire1.jpg", "images/tire2.jpg"],
+  "rating": 0,
+  "reviewCount": 0,
+  "sku": "WHL-SET-ENKEI-YOKO-STAG",
+  "description": "Used Enkei wheels with Yokohama Advan Apex tires, a staggered setup (18x8 front, 18x8.5 rear) for Subaru BRZ with 5x100 bolt pattern and +45mm offset. Includes new TPMS sensors. Only 634 miles of use.",
+  "longDescription": "This is a fantastic opportunity to acquire a lightly used (only 634 miles!) staggered wheel and tire package for your Subaru BRZ. The set features high-quality Enkei wheels paired with grippy Yokohama Advan Apex tires, providing an excellent balance of performance and aesthetics. The staggered setup, with 18x8 inch wheels in the front and 18x8.5 inch wheels in the rear, enhances the vehicle's stance and handling characteristics. The wheels have a 5x100 bolt pattern and a +45mm offset, ensuring compatibility with the BRZ, including models equipped with Brembo brakes. For added convenience and safety, four brand new TPMS (Tire Pressure Monitoring System) sensors from Tire Rack are already installed. This package is ideal for enthusiasts looking for an immediate bolt-on upgrade to significantly improve their BRZ's appearance and driving dynamics. The price includes shipping, making it a complete and convenient solution.",
+  "features": [
+    "Lightly Used – Only 634 miles on the setup",
+    "Staggered Fitment – 18x8 Front, 18x8.5 Rear for enhanced looks and handling",
+    "High-Quality Components – Enkei wheels paired with Yokohama Advan Apex tires",
+    "Includes TPMS Sensors – Four new Tire Rack TPMS sensors installed",
+    "Direct Fit for BRZ – 5x100 bolt pattern, +45mm offset",
+    "Brembo Brake Compatible – Clears Brembo calipers"
+  ],
+  "specifications": [
+    { "name": "Wheel Brand", "value": "Enkei" },
+    { "name": "Tire Brand", "value": "Yokohama Advan Apex" },
+    { "name": "Front Wheel Size", "value": "18x8" },
+    { "name": "Rear Wheel Size", "value": "18x8.5" },
+    { "name": "Bolt Pattern", "value": "5x100" },
+    { "name": "Offset", "value": "+45mm" },
+    { "name": "Condition", "value": "Used (634 miles)" },
+    { "name": "Includes", "value": "Wheels, Tires, 4 New TPMS Sensors" },
+    { "name": "Compatibility", "value": "Subaru BRZ (with or without Brembo brakes)" }
+  ],
+  "tags": ["Wheels", "Tires", "Enkei", "Yokohama Advan Apex", "Staggered", "BRZ", "Subaru", "5x100", "TPMS", "Used", "Performance"]
+},
+{
+  "id": "86-brz-frs-oil-cooler",
+  "name": "Brand New Oil Cooler for 86 / BRZ / FR-S",
+  "category": "Engine & Cooling",
+  "price": 199.99,
+  "image": "images/oil.jpg",
+  "images": ["images/oil.jpg", "images/oil1.jpg"],
+  "rating": 0,
+  "reviewCount": 0,
+  "sku": "ENG-COOL-OIL-86BRZ",
+  "description": "Brand new oil cooler system designed for Toyota 86, Subaru BRZ, and Scion FR-S models. Essential for maintaining optimal oil temperatures during aggressive driving and track use.",
+  "longDescription": "This is a brand new, never-before-used oil cooler kit specifically designed for the Toyota 86, Subaru BRZ, and Scion FR-S platform. An oil cooler is a crucial upgrade for any enthusiast who engages in spirited driving, track days, or lives in warmer climates, as it helps to maintain stable oil temperatures. Excessive oil temperatures can lead to premature engine wear and reduced oil effectiveness. This kit includes the core cooler unit, braided lines, and AN fittings (as visible in the image), ensuring a robust and leak-free installation. Keeping your engine oil cool is vital for engine longevity and consistent performance. This unit is a direct fit for the 'twin' platform, making installation relatively straightforward for those with mechanical experience. The price includes shipping, offering a convenient way to protect your investment and enhance your vehicle's reliability.",
+  "features": [
+    "Brand New Condition – Unused and ready for installation",
+    "Optimized Oil Cooling – Maintains stable oil temperatures for engine longevity",
+    "Enhanced Performance – Prevents power loss due to overheating oil",
+    "Complete Kit – Includes cooler core, braided lines, and AN fittings",
+    "Direct Fit – Designed specifically for 86/BRZ/FR-S models",
+    "High-Quality Components – Durable construction for reliable operation"
+  ],
+  "specifications": [
+    { "name": "Type", "value": "Oil Cooler" },
+    { "name": "Condition", "value": "Brand New" },
+    { "name": "Compatibility", "value": "Toyota 86, Subaru BRZ, Scion FR-S (All Generations)" },
+    { "name": "Includes", "value": "Cooler Core, Braided Lines, AN Fittings" },
+    { "name": "Installation", "value": "Vehicle-specific (may require minor modification/adapter kit depending on exact setup)" }
+  ],
+  "tags": ["Oil Cooler", "Cooling", "Engine", "86", "BRZ", "FR-S", "Toyota", "Subaru", "Scion", "Performance", "Brand New"]
+},
+{
+  "id": "edelbrock-supercharger-86-frs-brz",
+  "name": "Edelbrock Supercharger for 86 / FR-S / BRZ",
+  "category": "Forced Induction",
+  "price": 1500.00,
+  "image": "images/tat.jpg",
+  "images": ["images/tat.jpg", "images/tat1.jpg", ],
+  "rating": 0,
+  "reviewCount": 0,
+  "sku": "FI-SC-EDELBROCK-86FRSBRZ",
+  "description": "Edelbrock E-Force Supercharger system for Toyota 86, Scion FR-S, and Subaru BRZ. Significantly boosts horsepower and torque, offering a thrilling performance upgrade for your sports car.",
+  "longDescription": "Unleash the true potential of your Toyota 86, Scion FR-S, or Subaru BRZ with this Edelbrock E-Force Supercharger system. Known for its reliable power delivery and integrated design, the Edelbrock supercharger provides a significant increase in horsepower and torque across the entire RPM range, transforming the driving experience. This kit is designed for a relatively straightforward installation, often fitting within the factory engine bay with minimal modifications. It's a complete, engineered solution to overcome the stock car's power limitations. While specific details on mileage or exact condition are not provided beyond the image, the competitive pricing for a supercharger suggests a fantastic value for anyone looking to add serious power to their 'twin' platform. The price includes shipping, making it a convenient option for a major performance enhancement.",
+  "features": [
+    "Significant Horsepower and Torque Gains – Transforms vehicle performance",
+    "Reliable Power Delivery – Engineered for consistent boost",
+    "Integrated Design – Often fits within factory engine bay",
+    "Comprehensive Kit – Typically includes all necessary components for installation (charger unit, manifold, etc.)",
+    "Ideal for Enthusiasts – Perfect for track use or spirited driving"
+  ],
+  "specifications": [
+    { "name": "Type", "value": "Supercharger System" },
+    { "name": "Brand", "value": "Edelbrock E-Force" },
+    { "name": "Compatibility", "value": "Toyota 86, Scion FR-S, Subaru BRZ (Specific Generations/Years May Vary, confirm with seller)" },
+    { "name": "Boost Type", "value": "Roots-style (typical for Edelbrock E-Force)" },
+    { "name": "Installation", "value": "Bolt-on (requires mechanical expertise)" }
+  ],
+  "tags": ["Supercharger", "Forced Induction", "Edelbrock", "E-Force", "86", "FR-S", "BRZ", "Toyota", "Scion", "Subaru", "Performance", "Engine", "Power Adder"]
 }
   ]
 
